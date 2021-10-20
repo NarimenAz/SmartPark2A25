@@ -17,8 +17,8 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>10</y>
+      <x>10</x>
+      <y>30</y>
       <width>941</width>
       <height>581</height>
      </rect>
@@ -33,11 +33,19 @@
      <widget class="QLabel" name="idAnim">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>60</y>
+        <x>10</x>
+        <y>70</y>
         <width>56</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string>ID</string>
@@ -46,11 +54,20 @@
      <widget class="QLabel" name="NomAnim">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>110</y>
+        <x>10</x>
+        <y>140</y>
         <width>56</width>
         <height>16</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string>NOM</string>
@@ -59,37 +76,66 @@
      <widget class="QLabel" name="TypeAnim">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>170</y>
-        <width>131</width>
+        <x>10</x>
+        <y>200</y>
+        <width>171</width>
         <height>16</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
       <property name="text">
-       <string>TYPE D'ANIMAU </string>
+       <string>TYPE D'ANIMEAU </string>
       </property>
      </widget>
      <widget class="QLabel" name="AgeAnim">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>230</y>
+        <x>10</x>
+        <y>270</y>
         <width>71</width>
-        <height>16</height>
+        <height>31</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="text">
-       <string>age</string>
+       <string>AGE</string>
       </property>
      </widget>
      <widget class="QLabel" name="PaysAnim">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>280</y>
+        <x>10</x>
+        <y>330</y>
         <width>56</width>
-        <height>16</height>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string>pays</string>
@@ -100,7 +146,7 @@
        <rect>
         <x>280</x>
         <y>70</y>
-        <width>113</width>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
@@ -112,8 +158,8 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>120</y>
-        <width>113</width>
+        <y>130</y>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
@@ -122,8 +168,8 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>170</y>
-        <width>113</width>
+        <y>200</y>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
@@ -132,8 +178,8 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>220</y>
-        <width>113</width>
+        <y>270</y>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
@@ -142,8 +188,8 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>270</y>
-        <width>113</width>
+        <y>330</y>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
@@ -152,8 +198,8 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>330</y>
-        <width>113</width>
+        <y>390</y>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
@@ -161,27 +207,22 @@
      <widget class="QLabel" name="regimAnim">
       <property name="geometry">
        <rect>
-        <x>20</x>
-        <y>330</y>
-        <width>111</width>
-        <height>16</height>
+        <x>10</x>
+        <y>390</y>
+        <width>181</width>
+        <height>21</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string>régime alimentaire</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton">
-      <property name="geometry">
-       <rect>
-        <x>730</x>
-        <y>100</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>modifier</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_2">
@@ -200,8 +241,8 @@
      <widget class="QPushButton" name="pushButton_3">
       <property name="geometry">
        <rect>
-        <x>740</x>
-        <y>370</y>
+        <x>730</x>
+        <y>180</y>
         <width>101</width>
         <height>28</height>
        </rect>
@@ -213,8 +254,8 @@
      <widget class="QPushButton" name="pushButton_4">
       <property name="geometry">
        <rect>
-        <x>740</x>
-        <y>450</y>
+        <x>730</x>
+        <y>100</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -226,8 +267,8 @@
      <widget class="QPushButton" name="pushButton_5">
       <property name="geometry">
        <rect>
-        <x>740</x>
-        <y>520</y>
+        <x>730</x>
+        <y>460</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -292,7 +333,7 @@
       <property name="geometry">
        <rect>
         <x>730</x>
-        <y>190</y>
+        <y>380</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -305,10 +346,18 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>470</y>
-        <width>131</width>
-        <height>16</height>
+        <y>500</y>
+        <width>211</width>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string>nombre des repas</string>
@@ -318,10 +367,18 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>390</y>
-        <width>161</width>
-        <height>16</height>
+        <y>440</y>
+        <width>201</width>
+        <height>31</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>11</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="text">
        <string>quantité PAR REPAS </string>
@@ -331,8 +388,8 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>390</y>
-        <width>113</width>
+        <y>450</y>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
@@ -341,8 +398,8 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>470</y>
-        <width>113</width>
+        <y>510</y>
+        <width>201</width>
         <height>22</height>
        </rect>
       </property>
