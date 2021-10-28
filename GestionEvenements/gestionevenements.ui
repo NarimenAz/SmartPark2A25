@@ -160,7 +160,7 @@
         <string>Thème</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="lineEdit_Theme">
        <property name="geometry">
         <rect>
          <x>220</x>
@@ -239,7 +239,7 @@
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
-       <string>Mis à jour</string>
+       <string>Modifier</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_5">

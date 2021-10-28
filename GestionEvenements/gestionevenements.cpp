@@ -23,7 +23,8 @@ void GestionEvenements::on_pushButton_clicked()
     Evenement E;
     E.setID(ui->lineEdit_ID->text());
     E.setNom(ui->lineEdit_Nom->text());
-    E.setID(ui->dateEdit->text());
+    E.setDate(ui->dateEdit->text());
+    E.setTheme(ui->lineEdit_Theme->text());
 
     Dialog d;
     d.setevenement(E);

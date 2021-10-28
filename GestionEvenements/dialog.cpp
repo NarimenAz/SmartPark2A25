@@ -16,6 +16,7 @@ void Dialog::setevenement(Evenement E)
 {
     ui->lineEdit_IDD->setText(E.get_ID());
     ui->lineEdit_NomD->setText(E.get_Nom());
-   // ui->dateEditD->setDate(E.get_Date());
+    //ui->dateEditD->setText(E.get_Date());
+    ui->lineEdit_ThemeD->setText(E.get_Theme());
 
 }
