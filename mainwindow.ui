@@ -6,37 +6,37 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1006</width>
-    <height>653</height>
+    <width>1147</width>
+    <height>852</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="tabWidget">
+   <widget class="QTabWidget" name="gestion_des_animaux_2">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
-      <width>941</width>
-      <height>581</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1231</width>
+      <height>721</height>
      </rect>
     </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="ajouter_animal">
      <attribute name="title">
-      <string>gestion des animaux</string>
+      <string>Ajouter Animal</string>
      </attribute>
      <widget class="QLabel" name="idAnim">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>70</y>
+        <y>100</y>
         <width>56</width>
-        <height>16</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
@@ -48,16 +48,16 @@
        </font>
       </property>
       <property name="text">
-       <string>ID</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="NomAnim">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>140</y>
+        <y>160</y>
         <width>56</width>
-        <height>16</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="font">
@@ -70,16 +70,16 @@
        </font>
       </property>
       <property name="text">
-       <string>NOM</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;NOM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="TypeAnim">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>200</y>
+        <x>460</x>
+        <y>100</y>
         <width>171</width>
-        <height>16</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="font">
@@ -95,14 +95,14 @@
        <enum>Qt::NoFocus</enum>
       </property>
       <property name="text">
-       <string>TYPE D'ANIMEAU </string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;TYPE D'ANIMAL&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="AgeAnim">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>270</y>
+        <y>220</y>
         <width>71</width>
         <height>31</height>
        </rect>
@@ -116,14 +116,14 @@
        </font>
       </property>
       <property name="text">
-       <string>AGE</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;AGE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLabel" name="PaysAnim">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>330</y>
+        <x>460</x>
+        <y>270</y>
         <width>56</width>
         <height>31</height>
        </rect>
@@ -131,84 +131,64 @@
       <property name="font">
        <font>
         <family>Lucida Bright</family>
-        <pointsize>11</pointsize>
+        <pointsize>12</pointsize>
         <weight>75</weight>
         <italic>false</italic>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>pays</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;PAYS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit">
+     <widget class="QLineEdit" name="le_idAnim">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>70</y>
+        <x>120</x>
+        <y>100</y>
         <width>201</width>
-        <height>22</height>
+        <height>31</height>
        </rect>
       </property>
       <property name="text">
        <string/>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="le_nom">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>130</y>
+        <x>120</x>
+        <y>160</y>
         <width>201</width>
-        <height>22</height>
+        <height>31</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="le_typeAnimal">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>200</y>
+        <x>700</x>
+        <y>100</y>
         <width>201</width>
-        <height>22</height>
+        <height>31</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_4">
+     <widget class="QLineEdit" name="le_pays">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>270</y>
+        <x>700</x>
+        <y>280</y>
         <width>201</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_5">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>330</y>
-        <width>201</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QLineEdit" name="lineEdit_6">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>390</y>
-        <width>201</width>
-        <height>22</height>
+        <height>31</height>
        </rect>
       </property>
      </widget>
      <widget class="QLabel" name="regimAnim">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>390</y>
+        <x>460</x>
+        <y>160</y>
         <width>181</width>
         <height>21</height>
        </rect>
@@ -222,214 +202,494 @@
        </font>
       </property>
       <property name="text">
-       <string>régime alimentaire</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;REGIME ALIMENTAIRE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="pb_statistique">
       <property name="geometry">
        <rect>
-        <x>730</x>
-        <y>280</y>
-        <width>93</width>
-        <height>28</height>
+        <x>500</x>
+        <y>20</y>
+        <width>141</width>
+        <height>41</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>statistiques</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="pb_trier">
       <property name="geometry">
        <rect>
-        <x>730</x>
-        <y>180</y>
-        <width>101</width>
-        <height>28</height>
+        <x>270</x>
+        <y>20</y>
+        <width>161</width>
+        <height>41</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>trier</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_4">
+     <widget class="QPushButton" name="pb_rechercher">
       <property name="geometry">
        <rect>
-        <x>730</x>
-        <y>100</y>
-        <width>93</width>
-        <height>28</height>
+        <x>30</x>
+        <y>20</y>
+        <width>161</width>
+        <height>41</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>rechercher</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="pb_pdf">
       <property name="geometry">
        <rect>
-        <x>730</x>
-        <y>460</y>
-        <width>93</width>
-        <height>28</height>
+        <x>930</x>
+        <y>20</y>
+        <width>161</width>
+        <height>41</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>pdf</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_6">
+     <widget class="QPushButton" name="bp_ajouter">
       <property name="geometry">
        <rect>
-        <x>290</x>
-        <y>20</y>
-        <width>93</width>
-        <height>28</height>
+        <x>930</x>
+        <y>90</y>
+        <width>161</width>
+        <height>41</height>
        </rect>
       </property>
-      <property name="text">
-       <string>afficher</string>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_7">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>20</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>ajouter</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_8">
+     <widget class="QPushButton" name="pb_notification">
       <property name="geometry">
        <rect>
-        <x>520</x>
+        <x>700</x>
         <y>20</y>
-        <width>93</width>
-        <height>28</height>
+        <width>161</width>
+        <height>41</height>
        </rect>
       </property>
-      <property name="text">
-       <string>mise à jour</string>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_9">
-      <property name="geometry">
-       <rect>
-        <x>730</x>
-        <y>20</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>supprimer</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_10">
-      <property name="geometry">
-       <rect>
-        <x>730</x>
-        <y>380</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="text">
        <string>notifications</string>
       </property>
      </widget>
-     <widget class="QLabel" name="nbrderepas">
+     <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>500</y>
-        <width>211</width>
+        <x>0</x>
+        <y>0</y>
+        <width>1131</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Desktop/fond zoo.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>750</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="status">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>220</y>
+        <width>141</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Lucida Bright</family>
-        <pointsize>11</pointsize>
+        <pointsize>14</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>nombre des repas</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ffffff;&quot;&gt;STATUS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLabel" name="Quantite">
+     <widget class="QLineEdit" name="le_status">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>220</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_modifier">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>170</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>MODIFIER</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tab_animaux">
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>440</y>
-        <width>201</width>
+        <y>330</y>
+        <width>891</width>
+        <height>261</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>341</width>
         <height>31</height>
        </rect>
       </property>
       <property name="font">
        <font>
         <family>Lucida Bright</family>
-        <pointsize>11</pointsize>
         <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
       <property name="text">
-       <string>quantité PAR REPAS </string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#ffffff;&quot;&gt;LISTE DES ANIMAUX&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_13">
+     <widget class="QPushButton" name="pb_supprimer">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>450</y>
+        <x>930</x>
+        <y>250</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>SUPPRIMER </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_afficher">
+      <property name="geometry">
+       <rect>
+        <x>932</x>
+        <y>330</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>afficher</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinBox_age">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>220</y>
         <width>201</width>
-        <height>22</height>
+        <height>31</height>
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_14">
+     <widget class="QComboBox" name="comboBox_regime">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>510</y>
+        <x>700</x>
+        <y>160</y>
         <width>201</width>
-        <height>22</height>
+        <height>31</height>
        </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string/>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>herbivore</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>carnivore</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>omnivore</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>détritivore</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pb_reset">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>410</y>
+        <width>161</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Lucida Bright</family>
+        <pointsize>10</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>reset</string>
+      </property>
+     </widget>
+     <zorder>label_2</zorder>
+     <zorder>idAnim</zorder>
+     <zorder>NomAnim</zorder>
+     <zorder>TypeAnim</zorder>
+     <zorder>AgeAnim</zorder>
+     <zorder>PaysAnim</zorder>
+     <zorder>le_idAnim</zorder>
+     <zorder>le_nom</zorder>
+     <zorder>le_typeAnimal</zorder>
+     <zorder>le_pays</zorder>
+     <zorder>regimAnim</zorder>
+     <zorder>pb_statistique</zorder>
+     <zorder>pb_trier</zorder>
+     <zorder>pb_rechercher</zorder>
+     <zorder>pb_pdf</zorder>
+     <zorder>bp_ajouter</zorder>
+     <zorder>pb_notification</zorder>
+     <zorder>label_4</zorder>
+     <zorder>status</zorder>
+     <zorder>le_status</zorder>
+     <zorder>pb_modifier</zorder>
+     <zorder>tab_animaux</zorder>
+     <zorder>label_5</zorder>
+     <zorder>pb_supprimer</zorder>
+     <zorder>pb_afficher</zorder>
+     <zorder>spinBox_age</zorder>
+     <zorder>comboBox_regime</zorder>
+     <zorder>pb_reset</zorder>
+    </widget>
+    <widget class="QWidget" name="afficher_animaux">
+     <attribute name="title">
+      <string>Afficher Animal</string>
+     </attribute>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>2121</width>
+        <height>761</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Desktop/fond zoo.jpg</pixmap>
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="supprimer_animaux">
      <attribute name="title">
-      <string>gestion des employées</string>
+      <string>Supprimer Animal</string>
      </attribute>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1501</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Desktop/fond zoo.jpg</pixmap>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="tab_3">
+    <widget class="QWidget" name="modifier_animaux">
      <attribute name="title">
-      <string>Gestion des clients</string>
+      <string>Modifier Animal</string>
      </attribute>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1201</width>
+        <height>701</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../../Desktop/fond zoo.jpg</pixmap>
+      </property>
+     </widget>
     </widget>
-    <widget class="QWidget" name="tab_4">
-     <attribute name="title">
-      <string>Gestion des enclos</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_5">
-     <attribute name="title">
-      <string>Gestion des évènements</string>
-     </attribute>
-    </widget>
-    <widget class="QWidget" name="tab_6">
-     <attribute name="title">
-      <string>Gestion des produits</string>
-     </attribute>
-    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>600</y>
+      <width>56</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -437,7 +697,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1006</width>
+     <width>1147</width>
      <height>26</height>
     </rect>
    </property>
