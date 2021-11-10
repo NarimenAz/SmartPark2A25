@@ -5,18 +5,29 @@
 class Evenement
 {
 public:
-    void setID(QString n);
-    void setNom(QString n);
-    void setDate(QString n);
-    void setTheme(QString n);
-    QString get_ID();
-    QString get_Nom();
-    QString get_Date();
-    QString get_Theme();
     Evenement();
+    Evenement(int,QString,int,QString,int);
+    int get_ID();
+    QString get_Nom();
+    int get_Date();
+    QString get_Theme();
+    int get_NbEmployés();
+    void setID(int);
+    void setNom(QString);
+    void setDate(int);
+    void setTheme(QString);
+    void setNbEmployés(int);
+    void saisirEvent();
+    void supprimerEvent();
+    bool ajouterEvent();
+    void modifierEvent();
+    void chercherEvent(Evenement *E);
+    void afficherEvent()const;
+    void trierAnim(Evenement E);
 
 private:
-    QString ID,Nom,Date,Theme;
+    int ID,Date,NbEmployés;
+    QString Nom,Theme;
 };
 
 #endif // EVENEMENT_H

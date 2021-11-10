@@ -183,7 +183,7 @@
         <string>Nombre d'employés requis</string>
        </property>
       </widget>
-      <widget class="QSpinBox" name="spinBox">
+      <widget class="QSpinBox" name="NbEmployes">
        <property name="geometry">
         <rect>
          <x>220</x>
@@ -193,7 +193,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="pb_ajouter">
        <property name="geometry">
         <rect>
          <x>90</x>

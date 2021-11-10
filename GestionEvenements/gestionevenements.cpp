@@ -20,14 +20,21 @@ GestionEvenements::~GestionEvenements()
 
 void GestionEvenements::on_pushButton_clicked()
 {
-    Evenement E;
-    E.setID(ui->lineEdit_ID->text());
-    E.setNom(ui->lineEdit_Nom->text());
-    E.setDate(ui->dateEdit->text());
-    E.setTheme(ui->lineEdit_Theme->text());
+
+    int ID = ui->lineEdit_ID->text().toInt();
+    QString Nom = ui->lineEdit_Nom->text();
+    int Date = ui->dateEdit->text().toInt();
+    QString Theme = ui->lineEdit_Theme->text();
+    int Nbr_Employés = ui->NbEmployes->text().toInt();
+    Evenement E(ID,Nom,Date,Theme,Nbr_Employés);
 
     Dialog d;
     d.setevenement(E);
     d.exec();
+
+}
+
+void GestionEvenements::on_pb_ajouter_clicked()
+{
 
 }
