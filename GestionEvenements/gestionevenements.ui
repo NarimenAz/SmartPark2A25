@@ -17,10 +17,10 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>60</x>
-      <y>40</y>
-      <width>1051</width>
-      <height>581</height>
+      <x>20</x>
+      <y>10</y>
+      <width>1101</width>
+      <height>621</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -50,10 +50,10 @@
      <attribute name="title">
       <string>Gestion des évènements</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="Afficher">
       <property name="geometry">
        <rect>
-        <x>750</x>
+        <x>530</x>
         <y>40</y>
         <width>93</width>
         <height>28</height>
@@ -69,10 +69,10 @@
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
-        <x>40</x>
-        <y>20</y>
+        <x>20</x>
+        <y>30</y>
         <width>471</width>
-        <height>501</height>
+        <height>481</height>
        </rect>
       </property>
       <property name="title">
@@ -145,6 +145,16 @@
          <width>111</width>
          <height>22</height>
         </rect>
+       </property>
+       <property name="dateTime">
+        <datetime>
+         <hour>0</hour>
+         <minute>0</minute>
+         <second>0</second>
+         <year>2021</year>
+         <month>11</month>
+         <day>11</day>
+        </datetime>
        </property>
       </widget>
       <widget class="QLabel" name="label_4">
@@ -229,8 +239,8 @@
      <widget class="QPushButton" name="pushButton_4">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>220</y>
+        <x>980</x>
+        <y>40</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -242,11 +252,11 @@
        <string>Modifier</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_5">
+     <widget class="QPushButton" name="Supprimer">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>160</y>
+        <x>530</x>
+        <y>220</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -258,11 +268,11 @@
        <string>Supprimer</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_6">
+     <widget class="QPushButton" name="Recherche">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>100</y>
+        <x>760</x>
+        <y>40</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -277,8 +287,8 @@
      <widget class="QPushButton" name="pushButton_8">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>280</y>
+        <x>530</x>
+        <y>130</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -290,11 +300,11 @@
        <string>Calendrier</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_9">
+     <widget class="QPushButton" name="Trier">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>340</y>
+        <x>760</x>
+        <y>130</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -309,8 +319,8 @@
      <widget class="QPushButton" name="pushButton_10">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>400</y>
+        <x>980</x>
+        <y>130</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -325,8 +335,8 @@
      <widget class="QPushButton" name="pushButton_11">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>460</y>
+        <x>760</x>
+        <y>220</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -336,6 +346,32 @@
       </property>
       <property name="text">
        <string>PDF</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="MiseAJour">
+      <property name="geometry">
+       <rect>
+        <x>980</x>
+        <y>220</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="text">
+       <string>MAJ</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="table_event">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>320</y>
+        <width>521</width>
+        <height>241</height>
+       </rect>
       </property>
      </widget>
     </widget>

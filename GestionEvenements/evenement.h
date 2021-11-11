@@ -6,6 +6,7 @@ class Evenement
 {
 public:
     Evenement();
+    Evenement E(int ID,QString Nom,int Date,QString Theme,int NbEmployés);
     Evenement(int,QString,int,QString,int);
     int get_ID();
     QString get_Nom();
@@ -18,12 +19,12 @@ public:
     void setTheme(QString);
     void setNbEmployés(int);
     void saisirEvent();
-    void supprimerEvent();
+    bool supprimerEvent();
     bool ajouterEvent();
-    void modifierEvent();
-    void chercherEvent(Evenement *E);
+    bool modifierEvent();
+    void rechercheEvent(Evenement *E);
     void afficherEvent()const;
-    void trierAnim(Evenement E);
+    void trierEvent(Evenement E);
 
 private:
     int ID,Date,NbEmployés;
