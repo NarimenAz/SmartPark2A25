@@ -34,6 +34,15 @@ private slots:
 
     void on_pb_reset_clicked();
 
+QModelIndex on_tab_animaux_activated( QModelIndex index);
+
+
+    void on_pb_imprimer_clicked();
+
+void on_tab_animaux_clicked(const QModelIndex &index);
+
+void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     animaux A;

@@ -40,7 +40,7 @@ public:
   //  void setnbrrepas(int);
  //   void setquantitérepas(int);
 
-//void CREATION_PDF();
+void CREATION_PDF();
 
 
     bool ajouterAnim();
@@ -56,7 +56,6 @@ public:
      bool supprimerTout();
 
 
-    // void transfererArgent3(ANIMEAU & A);
     animaux(int idAnim, QString nomAnim,QString typeAnim,QString pays,int ageAnim,QString status,QString regimeAliment );
     animaux();
 };

@@ -3,6 +3,29 @@
 
 
 
+
+
+#include <QSystemTrayIcon>
+#include<QString>
+class Notification
+{
+public:
+    Notification();
+    void notification_ajoutanimau();
+    void notification_ajoutEnfant();
+    void notification_supprimeranimau();
+    void notification_supprimerEnfant();
+    void notification_modifieranimau();
+    void notification_modifierEnfant();
+    void mail_Enfant();
+
+
+
+
+
+
+};
+/*
 #include <QWidget>
 #include <QLabel>
 #include <QGridLayout>
@@ -50,6 +73,6 @@ class notification :public QWidget
 
 
 
-
+*/
 
 #endif // NOTIFICATION_H
