@@ -13,6 +13,7 @@ GestionEvenements::GestionEvenements(QWidget *parent)
 {
     ui->setupUi(this);
     ui->lineEdit_ID->setValidator(new QIntValidator(0,9999999,this));
+    ui->lineEdit_NbEmployes->setValidator(new QIntValidator(0,999,this));
 }
 
 GestionEvenements::~GestionEvenements()
@@ -24,10 +25,10 @@ void GestionEvenements::on_pb_ajouter_clicked()
 {
     int ID = ui->lineEdit_ID->text().toInt();
     QString Nom = ui->lineEdit_Nom->text();
-    int Date = ui->dateEdit->text().toInt();
+    QString Date = ui->lineEdit_Date->text();
     QString Theme = ui->lineEdit_Theme->text();
-    int Nbr_Employés = ui->NbEmployes->text().toInt();
-    Evenement E(ID,Nom,Date,Theme,Nbr_Employés);
+    int NbEmployes = ui->lineEdit_NbEmployes->text().toInt();
+    Evenement E(ID,Nom,Date,Theme,NbEmployes);
 
            bool test=E.ajouterEvent();
                 if(test)
@@ -40,7 +41,7 @@ void GestionEvenements::on_pb_ajouter_clicked()
                  }
                                else
                                    QMessageBox::critical(nullptr, QObject::tr("Ajout failed"),
-                                               QObject::tr("ajout failed.\n"
+                                               QObject::tr("Ajout failed.\n"
                                                            "Click Cancel to exit."), QMessageBox::Cancel);
 
 }
@@ -49,6 +50,7 @@ void GestionEvenements::on_pb_ajouter_clicked()
 void GestionEvenements::on_Afficher_clicked()
 {
     Evenement E;
+    ui->table_event->setModel(E.afficherEvent());
     ui->table_event->setModel(E.afficherEvent());
 }
 
@@ -78,11 +80,11 @@ void GestionEvenements::on_MiseAJour_clicked()
 
     int ID = ui->lineEdit_ID->text().toInt();
     QString Nom = ui->lineEdit_Nom->text();
-    int Date = ui->dateEdit->text().toInt();
+    QString Date = ui->lineEdit_Date->text();
     QString Theme = ui->lineEdit_Theme->text();
-    int Nbr_Employés = ui->NbEmployes->text().toInt();
-    Evenement E(ID,Nom,Date,Theme,Nbr_Employés);
-        bool test=E.modifierEvent(E.get_ID(),E.get_Nom(),E.get_Date(),E.get_Theme(),E.get_NbEmployés());
+    int NbEmployes = ui->lineEdit_NbEmployes->text().toInt();
+    Evenement E(ID,Nom,Date,Theme,NbEmployes);
+        bool test=E.modifierEvent(E.get_ID(),E.get_Nom(),E.get_Date(),E.get_Theme(),E.get_NbEmployes());
 
         QMessageBox msgBox;
 
@@ -105,9 +107,9 @@ void GestionEvenements::on_Recherche_clicked()
 
     ui->lineEdit_ID->clear();
     ui->lineEdit_Nom->clear();
-    ui->dateEdit->clear();
+    ui->lineEdit_Date->clear();
     ui->lineEdit_Theme->clear();
-    ui->NbEmployes->clear();
+    ui->lineEdit_NbEmployes->clear();
 
 }
 
@@ -116,9 +118,9 @@ void GestionEvenements::on_Trier_clicked()
     Evenement E;
 
     //QMessageBox msg;
-    if(E.trierEvent())
+    if(E.trierEvent(E))
     {
-        ui->table_event->setModel(E.trierEvent());
+        ui->table_event->setModel(E.trierEvent(E));
 
     }
 }

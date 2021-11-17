@@ -10,34 +10,34 @@ Evenement::Evenement()
 {
     ID=0;
     Nom="";
-    Date=0;
+    Date="";
     Theme="";
-    NbEmployés=0;
+    NbEmployes=0;
 
 }
 
-Evenement::Evenement(int ID,QString Nom,int Date,QString Theme,int NbEmployés)
+Evenement::Evenement(int ID,QString Nom,QString Date,QString Theme,int NbEmployes)
 {
     this->ID=ID;
     this->Nom=Nom;
     this->Date=Date;
     this->Theme=Theme;
-    this->NbEmployés= NbEmployés;
+    this->NbEmployes= NbEmployes;
 
 
 }
 
 int Evenement::get_ID(){return ID;}
 QString Evenement::get_Nom(){return Nom;}
-int Evenement::get_Date(){return Date;}
+QString Evenement::get_Date(){return Date;}
 QString Evenement::get_Theme(){return Theme;}
-int Evenement::get_NbEmployés(){return NbEmployés;}
+int Evenement::get_NbEmployes(){return NbEmployes;}
 
 void Evenement::setID(int ID){this->ID=ID;}
 void Evenement::setNom(QString Nom){this->Nom=Nom;}
-void Evenement::setDate(int Date){this->Date=Date;}
+void Evenement::setDate(QString Date){this->Date=Date;}
 void Evenement::setTheme(QString Theme){this->Theme=Theme;}
-void Evenement::setNbEmployés(int NbEmployés){this->NbEmployés=NbEmployés;}
+void Evenement::setNbEmployes(int NbEmployes){this->NbEmployes=NbEmployes;}
 
 /*******************************************************************************************************************************/
 /**********************************************Ajouter************************************************************************/
@@ -45,18 +45,17 @@ void Evenement::setNbEmployés(int NbEmployés){this->NbEmployés=NbEmployés;}
 
 bool Evenement::ajouterEvent()
 {
-    bool test=false;
+
     QString ID_string = QString::number(ID);
-    QString Date_string = QString::number(Date);
-    QString NbEmployés_string = QString::number(NbEmployés);
+    QString NbEmployes_string = QString::number(NbEmployes);
     QSqlQuery query;
-       query.prepare("INSERT INTO EVENEMENTS (ID,NOM,DATE,THEME,NB_EMPLOYES) "
-                     "VALUES (:ID, :Nom, :Date, :Theme, :NbEmployés");
-       query.bindValue(0, ID_string);
-       query.bindValue(1, Nom);
-       query.bindValue(2, Date_string);
-       query.bindValue(3, Theme);
-       query.bindValue(4, NbEmployés_string);
+       query.prepare("INSERT INTO evenements (ID,nom,datee,theme,nb_employes) "
+                     "VALUES (:ID, :Nom, :Date, :Theme, :NbEmployes)");
+       query.bindValue(":ID", ID_string);
+       query.bindValue(":Nom", Nom);
+       query.bindValue(":Date", Date);
+       query.bindValue(":Theme", Theme);
+       query.bindValue(":NbEmployes", NbEmployes_string);
        return query.exec();
 
 }
@@ -73,7 +72,7 @@ QSqlQueryModel* Evenement::afficherEvent()
      model->setHeaderData(1, Qt::Horizontal, QObject::tr("Nom"));
      model->setHeaderData(2, Qt::Horizontal, QObject::tr("Date"));
      model->setHeaderData(3, Qt::Horizontal, QObject::tr("Theme"));
-     model->setHeaderData(4, Qt::Horizontal, QObject::tr("NbEmployés"));
+     model->setHeaderData(4, Qt::Horizontal, QObject::tr("NbEmployes"));
 
 
 
@@ -104,7 +103,7 @@ bool Evenement::supprimerEvent(int ID)
 /***************************************************Modifier********************************************************************/
 
 
-bool Evenement::modifierEvent(int ID,QString Nom,int Date,QString Theme,int NbEmployés)
+bool Evenement::modifierEvent(int ID,QString Nom,QString Date,QString Theme,int NbEmployes)
 
 {
 
@@ -112,12 +111,12 @@ bool Evenement::modifierEvent(int ID,QString Nom,int Date,QString Theme,int NbEm
 
     QSqlQuery query;
 
-    query.prepare("update EVENEMENTS set Nom=:Nom, Date=:Date, Theme=:Theme, NbEmployés=:NbEmployés,where ID=:ID");
+    query.prepare("update EVENEMENTS set nom=:Nom, datee=:Date, theme=:Theme, nb_employes=:NbEmployes,where ID=:ID");
     query.bindValue(":ID",ID);
     query.bindValue(":Nom",Nom);
     query.bindValue(":Date",Date);
     query.bindValue(":Theme",Theme);
-    query.bindValue(":NbEmployés",NbEmployés);
+    query.bindValue(":NbEmployes",NbEmployes);
 
     return query.exec();
 
@@ -145,7 +144,7 @@ QSqlQueryModel* Evenement::rechercheEvent(int ID)
      model->setHeaderData(0, Qt::Horizontal, QObject::tr("Nom"));
      model->setHeaderData(0, Qt::Horizontal, QObject::tr("Date"));
      model->setHeaderData(0, Qt::Horizontal, QObject::tr("Theme"));
-     model->setHeaderData(0, Qt::Horizontal, QObject::tr("NbEmployés"));
+     model->setHeaderData(0, Qt::Horizontal, QObject::tr("NbEmployes"));
 
      return model;
 
@@ -156,7 +155,7 @@ QSqlQueryModel* Evenement::rechercheEvent(int ID)
 
 
 
-QSqlQueryModel * Evenement::trierEvent()
+QSqlQueryModel * Evenement::trierEvent(Evenement)
 
 {
 

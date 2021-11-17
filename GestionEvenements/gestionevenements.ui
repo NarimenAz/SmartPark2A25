@@ -137,26 +137,6 @@
         <string>Date</string>
        </property>
       </widget>
-      <widget class="QDateEdit" name="dateEdit">
-       <property name="geometry">
-        <rect>
-         <x>220</x>
-         <y>200</y>
-         <width>111</width>
-         <height>22</height>
-        </rect>
-       </property>
-       <property name="dateTime">
-        <datetime>
-         <hour>0</hour>
-         <minute>0</minute>
-         <second>0</second>
-         <year>2021</year>
-         <month>11</month>
-         <day>11</day>
-        </datetime>
-       </property>
-      </widget>
       <widget class="QLabel" name="label_4">
        <property name="geometry">
         <rect>
@@ -170,11 +150,11 @@
         <string>Thème</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_Theme">
+      <widget class="QLineEdit" name="lineEdit_Date">
        <property name="geometry">
         <rect>
          <x>220</x>
-         <y>270</y>
+         <y>190</y>
          <width>113</width>
          <height>22</height>
         </rect>
@@ -191,16 +171,6 @@
        </property>
        <property name="text">
         <string>Nombre d'employés requis</string>
-       </property>
-      </widget>
-      <widget class="QSpinBox" name="NbEmployes">
-       <property name="geometry">
-        <rect>
-         <x>220</x>
-         <y>330</y>
-         <width>42</width>
-         <height>22</height>
-        </rect>
        </property>
       </widget>
       <widget class="QPushButton" name="pb_ajouter">
@@ -233,6 +203,26 @@
        </property>
        <property name="text">
         <string>Quitter</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_Theme">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>270</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_NbEmployes">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>330</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
        </property>
       </widget>
      </widget>

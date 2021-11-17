@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,14 +17,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     connection.cpp \
-    dialog.cpp \
     evenement.cpp \
     main.cpp \
     gestionevenements.cpp
 
 HEADERS += \
     connection.h \
-    dialog.h \
     evenement.h \
     gestionevenements.h
 

@@ -1,34 +1,37 @@
-#ifndef EVENEMENT_H
-#define EVENEMENT_H
-#include<QString>
+#ifndef EMPLOYES_H
+#define EMPLOYES_H
+#include <QString>
+#include <QSqlQueryModel>
+#include <QSqlQuery>
 
 class Evenement
 {
 public:
     Evenement();
-    Evenement E(int ID,QString Nom,int Date,QString Theme,int NbEmployés);
-    Evenement(int,QString,int,QString,int);
+    Evenement E(int ID,QString Nom,QString Date,QString Theme,int NbEmployes);
+    Evenement(int,QString,QString,QString,int);
     int get_ID();
     QString get_Nom();
-    int get_Date();
+    QString get_Date();
     QString get_Theme();
-    int get_NbEmployés();
+    int get_NbEmployes();
     void setID(int);
     void setNom(QString);
-    void setDate(int);
+    void setDate(QString);
     void setTheme(QString);
-    void setNbEmployés(int);
+    void setNbEmployes(int);
     void saisirEvent();
-    bool supprimerEvent();
+    bool supprimerEvent(int);
     bool ajouterEvent();
-    bool modifierEvent();
-    void rechercheEvent(Evenement *E);
-    void afficherEvent()const;
-    void trierEvent(Evenement E);
+    bool modifierEvent(int,QString,QString,QString,int);
+    QSqlQueryModel* rechercheEvent(int);
+    QSqlQueryModel* afficherEvent();
+    QSqlQueryModel * trierEvent(Evenement E);
 
 private:
-    int ID,Date,NbEmployés;
-    QString Nom,Theme;
+    int ID,NbEmployes;
+    QString Nom,Theme,Date;
 };
 
-#endif // EVENEMENT_H
+
+#endif // EMPLOYES_H
