@@ -31,7 +31,7 @@ bool cage::ajouter()
     QString id_string= QString::number(id);
          query.prepare("INSERT INTO cages (identifiant,status,taille,type,datee) "
                        "VALUES (:id, :status, :taille, :type, :date)");
-         query.bindValue(":id", id_string); //bindvalue  t3abi ":id" b id_string
+         query.bindValue(":id", id_string);
          query.bindValue(":status", status);
          query.bindValue(":taille", taille);
          query.bindValue(":type", type);
@@ -46,7 +46,7 @@ QSqlQueryModel* cage::afficher()
 
           model->setQuery("SELECT* FROM cages");
           model->setHeaderData(0, Qt::Horizontal, QObject::tr("identifiant")); //setheader t7ot les entite ta3 etableau
-          model->setHeaderData(1, Qt::Horizontal, QObject::tr("type"));
+          model->setHeaderData(1, Qt::Horizontal, QObject::tr("status"));
           model->setHeaderData(2, Qt::Horizontal, QObject::tr("datee"));
           model->setHeaderData(3, Qt::Horizontal, QObject::tr("type"));
           model->setHeaderData(4, Qt::Horizontal, QObject::tr("taille"));
@@ -80,4 +80,37 @@ bool cage::modifierCage(int id,int status,int taille,QString type,QString date)
     return query.exec();
 }
 
+QSqlQueryModel * cage::chercherCage(int id,int taille)
+{
+    QSqlQueryModel * model=new QSqlQueryModel();
+    QSqlQuery query;
+    query.prepare("SELECT * from cages where identifiant like :id or taille like :taille ");
+    query.bindValue(":id",id);// ID VARIABLE LOCAL BA3D BCH NA3MALOU APPEL BIL getIDANIM()
+    query.bindValue(":taille",taille);
+    query.exec();
+    model->setQuery(query);
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("identifiant"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("status"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("datee"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("type"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("taille"));
+
+    return model;
+}
+
+QSqlQueryModel* cage::trierCage()
+{
+    QSqlQueryModel* model = new QSqlQueryModel();
+
+        model->setQuery("select *FROM cages ORDER BY identifiant ASC");
+
+
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("identifiant"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("status"));
+        model->setHeaderData(2, Qt::Horizontal, QObject::tr("datee"));
+        model->setHeaderData(3, Qt::Horizontal, QObject::tr("type"));
+        model->setHeaderData(4, Qt::Horizontal, QObject::tr("taille"));
+
+    return model;
+}
 

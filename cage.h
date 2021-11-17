@@ -23,10 +23,13 @@ public:
     QSqlQueryModel* afficher();
     bool supprimer(int);
     bool modifierCage(int,int,int,QString,QString );
+    QSqlQueryModel*  chercherCage(int,int);
+    QSqlQueryModel* trierCage();
 
 private:
     int id, status,taille;
     QString type, date;
+
 };
 
 #endif // CAGE_H
