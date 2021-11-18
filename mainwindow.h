@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 #include "employee.h"
 #include <QMainWindow>
-#include  "dialog.h"
+#include  "Widget.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -40,9 +40,11 @@ private slots:
 
     void on_pb_calcul_clicked();
 
+    void on_camera_pt_clicked();
+
 private:
     Ui::MainWindow *ui;
-     Dialog *dialog;
+     Widget *dialog;
     Employee E;
 };
 

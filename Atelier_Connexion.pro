@@ -5,6 +5,8 @@
 #-------------------------------------------------
 
 QT+= core gui
+
+
 QT +=core gui sql
 QT +=sql
 QT+=widgets
@@ -14,7 +16,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = Atelier_Connexion
 TEMPLATE = app
-
+QT       += core gui multimedia multimediawidgets
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
@@ -29,21 +31,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-    dialog.cpp \
     employee.cpp \
         main.cpp \
         mainwindow.cpp \
-    connection.cpp
+    connection.cpp \
+    widget.cpp
 
 HEADERS += \
-    dialog.h \
     employee.h \
         mainwindow.h \
-    connection.h
+    connection.h \
+    widget.h
 
 FORMS += \
-        dialog.ui \
-        mainwindow.ui
+        mainwindow.ui \
+        widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

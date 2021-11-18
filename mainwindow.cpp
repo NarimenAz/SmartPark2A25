@@ -3,7 +3,7 @@
 #include <QIntValidator>
 #include <QMessageBox>
 #include <QPixmap>
-#include "dialog.h"
+
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,7 +14,8 @@ MainWindow::MainWindow(QWidget *parent) :
 ui->tab_employee->setModel(E.afficher());
 ui->le_id->setValidator(new QIntValidator(1000,9999,this));
 ui->le_tel->setValidator(new QIntValidator(10000000,99999999,this));
-
+ui->password->setValidator(new QIntValidator(0,9999,this));
+ui->le_salaire->setValidator(new QIntValidator(0,999999999,this));
 }
 
 MainWindow::~MainWindow()
@@ -107,7 +108,7 @@ void MainWindow::on_login_clicked()
     QString username = ui->username->text();
              QString password = ui->password->text();
 
-             if (username == "admin" && password == "admin") {
+             if (username == "admin" && password == "1234") {
                  QMessageBox::information(this, "Login", "Username and password are correct");
               ui->stackedWidget->setCurrentIndex(0);
 
@@ -122,18 +123,7 @@ void MainWindow::on_login_clicked()
 
 
 
-   /* QString username = ui->username->text();
-      QString password = ui->password->text();
 
-      if(username ==  "test" && password == "test") {
-          QMessageBox::information(this, "Login", "Username and password is correct");
-          //hide();
-          dialog= new Dialog(this);
-          dialog->show();
-      }
-      else {
-          QMessageBox::warning(this,"Login", "Username and password is not correct");
-      }*/
 }
 
 void MainWindow::on_load_pt_clicked()
@@ -183,4 +173,12 @@ void MainWindow::on_pb_calcul_clicked()
         query.exec();
         query.next();
         ui->le_somme_salaire->setText(query.value(0).toString());
+}
+
+void MainWindow::on_camera_pt_clicked()
+{
+Widget w ;
+w.setModal(true);
+w.exec();
+
 }
