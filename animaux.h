@@ -44,7 +44,6 @@ void CREATION_PDF();
 
 
     bool ajouterAnim();
-
     QSqlQueryModel* afficherAnim();
 
     bool supprimerAnim(int);
@@ -53,8 +52,12 @@ void CREATION_PDF();
     QSqlQueryModel*  chercherAnim(int,QString,QString);
 
      QSqlQueryModel* trierAnim();
+     QSqlQueryModel* trierAnimAge();
+     QSqlQueryModel* trierAnimpays();
      bool supprimerTout();
 
+
+     QSqlQueryModel * chercheranimal(QString);
 
     animaux(int idAnim, QString nomAnim,QString typeAnim,QString pays,int ageAnim,QString status,QString regimeAliment );
     animaux();

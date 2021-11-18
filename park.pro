@@ -1,4 +1,6 @@
 QT       += core gui sql printsupport
+QT  += charts
+QT       += svg
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -20,13 +22,15 @@ SOURCES += \
     connection.cpp \
     main.cpp \
     mainwindow.cpp \
-    notification.cpp
+    notification.cpp \
+    qrcode.cpp
 
 HEADERS += \
     animaux.h \
     connection.h \
     mainwindow.h \
-    notification.h
+    notification.h \
+    qrcode.h
 
 FORMS += \
     mainwindow.ui \

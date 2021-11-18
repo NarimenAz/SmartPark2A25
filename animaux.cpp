@@ -26,6 +26,7 @@ animaux::animaux()
  idAnim=0;nomAnim="";typeAnim="";
  pays="";ageAnim=0;
  status="";regimeAliment="";
+
 }
 
 animaux::animaux(int idAnim, QString nomAnim,QString typeAnim,QString pays,int ageAnim,QString status,QString regimeAliment )
@@ -169,13 +170,62 @@ QSqlQueryModel * animaux::chercherAnim(int id,QString type,QString regime)
 }
 
 
+QSqlQueryModel * animaux::chercheranimal(QString recherche)
+{
+    QSqlQueryModel * model=new QSqlQueryModel();
+    model->setQuery("SELECT * FROM animaux WHERE ID_ANIMAL LIKE '"+recherche+"%' OR TYPE_ANIMAL LIKE '"+recherche+"%' OR REGIME_ALIMENT LIKE '"+recherche+"%'");
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID  ANIMAL"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM ANIMAL"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("TYPE ANIMAL"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("AGE ANIMAL"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("PAYS ANIMAL"));
+    model->setHeaderData(5, Qt::Horizontal, QObject::tr("REGIME ALIMENTAIRE"));
+    model->setHeaderData(6, Qt::Horizontal, QObject::tr("STATUS ANIMAL"));
 
+    return model;
+}
 
 QSqlQueryModel* animaux::trierAnim()
 {
     QSqlQueryModel* model = new QSqlQueryModel();
 
         model->setQuery("select *FROM ANIMAUX ORDER BY ID_ANIMAL ASC");
+
+
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID  ANIMAL"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM ANIMAL"));
+        model->setHeaderData(2, Qt::Horizontal, QObject::tr("TYPE ANIMAL"));
+        model->setHeaderData(3, Qt::Horizontal, QObject::tr("AGE ANIMAL"));
+        model->setHeaderData(4, Qt::Horizontal, QObject::tr("PAYS ANIMAL"));
+        model->setHeaderData(5, Qt::Horizontal, QObject::tr("REGIME ALIMENTAIRE"));
+        model->setHeaderData(6, Qt::Horizontal, QObject::tr("STATUS ANIMAL"));
+
+    return model;
+}
+
+QSqlQueryModel*  animaux::trierAnimAge()
+{
+    QSqlQueryModel* model = new QSqlQueryModel();
+
+        model->setQuery("select *FROM ANIMAUX ORDER BY cast(AGE_ANIMAL as number) ASC");
+
+
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID  ANIMAL"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("NOM ANIMAL"));
+        model->setHeaderData(2, Qt::Horizontal, QObject::tr("TYPE ANIMAL"));
+        model->setHeaderData(3, Qt::Horizontal, QObject::tr("AGE ANIMAL"));
+        model->setHeaderData(4, Qt::Horizontal, QObject::tr("PAYS ANIMAL"));
+        model->setHeaderData(5, Qt::Horizontal, QObject::tr("REGIME ALIMENTAIRE"));
+        model->setHeaderData(6, Qt::Horizontal, QObject::tr("STATUS ANIMAL"));
+    return model;
+}
+
+
+QSqlQueryModel*  animaux::trierAnimpays()
+{
+    QSqlQueryModel* model = new QSqlQueryModel();
+
+        model->setQuery("select *FROM ANIMAUX ORDER BY PAYS ASC");
 
 
     model->setHeaderData(0, Qt::Horizontal, QObject::tr("ID"));
@@ -187,7 +237,6 @@ QSqlQueryModel* animaux::trierAnim()
 
     return model;
 }
-
 
 
 bool animaux::supprimerTout()

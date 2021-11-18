@@ -15,56 +15,31 @@ void Notification::notification_ajoutanimau()
 
     QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
-   // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
+    //notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/pdf/logo_projet"));
     notifyIcon->show();
-    notifyIcon->showMessage("Gestion des Animaux ","nouveau animau est ajouté ",QSystemTrayIcon::Information,15000);
+    notifyIcon->showMessage("Gestion des Animaux ","nouveau animal est ajouté ",QSystemTrayIcon::Information,15000);
 }
-void Notification::notification_ajoutEnfant()
-{
 
-    QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
-   // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
-    notifyIcon->show();
-    notifyIcon->showMessage("Gestion des Enfants ","novueau enfant ajouté ",QSystemTrayIcon::Information,15000);
-}
+
 void Notification::notification_supprimeranimau(){
     QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
    // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
     notifyIcon->show();
-    notifyIcon->showMessage("Gestion des Animaux ","nouveau animau est supprimé",QSystemTrayIcon::Information,15000);
+    notifyIcon->showMessage("Gestion des Animaux ","Un animal est supprimé",QSystemTrayIcon::Information,15000);
 }
-void Notification::notification_supprimerEnfant(){
-    QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
-   // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
-    notifyIcon->show();
-    notifyIcon->showMessage("Gestion des Enfants ","un enfant est supprimé",QSystemTrayIcon::Information,15000);
 
-}
-void Notification::notification_modifierEnfant(){
-    QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
-   // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
-    notifyIcon->show();
-    notifyIcon->showMessage("Gestion des Enfants ","un enfant est modifié",QSystemTrayIcon::Information,15000);
 
-}
+
 void Notification::notification_modifieranimau(){
     QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
    // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
     notifyIcon->show();
-    notifyIcon->showMessage("Gestion des Animaux ","nouveau animau est modifié",QSystemTrayIcon::Information,15000);
-
-}
-void Notification::mail_Enfant(){
-    QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
-
-   // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
-    notifyIcon->show();
-    notifyIcon->showMessage("","Votre Mail est envoyé :)",QSystemTrayIcon::Information,15000);
+    notifyIcon->showMessage("Gestion des Animaux ","nouveau animal est modifié",QSystemTrayIcon::Information,15000);
 
 }
 

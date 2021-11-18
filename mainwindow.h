@@ -28,7 +28,7 @@ private slots:
 
     void on_pb_afficher_clicked();
 
-    void on_pb_trier_clicked();
+   // void on_pb_trier_clicked();
 
     void on_pb_pdf_clicked();
 
@@ -41,8 +41,18 @@ QModelIndex on_tab_animaux_activated( QModelIndex index);
 
 void on_tab_animaux_clicked(const QModelIndex &index);
 
-void on_pushButton_clicked();
 
+void on_pb_stat_clicked();
+
+void on_comboBox_trier_activated();
+
+void on_comboBox_trier_activated(const QString &arg1);
+
+void on_pb_camera_clicked();
+
+void on_pb_code_clicked();
+
+bool search(int);
 private:
     Ui::MainWindow *ui;
     animaux A;
