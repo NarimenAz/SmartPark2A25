@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "cage.h"
+#include "arduino.h"
 #include<QMessageBox>
 #include<QIntValidator>
 #include <QSqlQuery>
@@ -47,6 +48,17 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->status->setValidator(new QIntValidator(0, 1, this));
     ui->taille->setValidator(new QIntValidator(1, 99999999, this));
     ui->tab_cage->setModel(C.afficher());
+
+    int ret=A.connect_arduino(); // lancer la connexion à arduino
+        switch(ret){
+        case(0):qDebug()<< "arduino is available and connected to : "<< A.getarduino_port_name();
+            break;
+        case(1):qDebug() << "arduino is available but not connected to :" <<A.getarduino_port_name();
+           break;
+        case(-1):qDebug() << "arduino is not available";
+        }
+         QObject::connect(A.getserial(),SIGNAL(readyRead()),this,SLOT(update_label())); // permet de lancer
+         //le slot update_label suite à la reception du signal readyRead (reception des données).
 }
 
 MainWindow::~MainWindow()
@@ -362,7 +374,8 @@ void MainWindow::on_pushButton_5_clicked()  //clear
 
 
 
-void MainWindow::on_pushButton_7_clicked()
+
+void MainWindow::on_pushButton_6_clicked()
 {
     files.clear();
 
@@ -378,4 +391,85 @@ void MainWindow::on_pushButton_7_clicked()
             fileListString.append( "\"" + QFileInfo(file).fileName() + "\" " );
 
         ui->file->setText( fileListString );
+}
+
+void MainWindow::on_lineEdit_textEdited(const QString &arg1)
+{
+    ui->tab_cage->setModel(C.chercher(arg1));
+}
+
+
+void MainWindow::on_pushButton_7_clicked()
+{
+    ui->tab_cage->setModel(C.trierCage1());
+
+
+    int id=ui->id->text().toInt();
+    int status=ui->status->text().toInt();
+    int taille=ui->taille->text().toInt();
+    QString type=ui->type->text();
+    QString date=ui->date->text();
+            cage C(id, status,taille,type,date);
+
+            QMessageBox msg;
+           if(C.trierCage1())
+           {
+                ui->tab_cage->setModel(C.trierCage1());
+               msg.setText("ceci est la liste des cages avec tri croissant selon la taille");
+               msg.exec();
+           }
+
+
+           ui->id->clear();
+           ui->date->clear();
+           ui->type->clear();
+           ui->taille->clear();
+           ui->status->clear();
+}
+
+void MainWindow::on_pushButton_8_clicked()
+{
+    ui->tab_cage->setModel(C.trierCage2());
+
+
+    int id=ui->id->text().toInt();
+    int status=ui->status->text().toInt();
+    int taille=ui->taille->text().toInt();
+    QString type=ui->type->text();
+    QString date=ui->date->text();
+            cage C(id, status,taille,type,date);
+
+            QMessageBox msg;
+           if(C.trierCage2())
+           {
+                ui->tab_cage->setModel(C.trierCage2());
+               msg.setText("ceci est la liste des cages avec tri croissant selon la taille");
+               msg.exec();
+           }
+
+
+           ui->id->clear();
+           ui->date->clear();
+           ui->type->clear();
+           ui->taille->clear();
+           ui->status->clear();
+}
+
+void MainWindow::update_label()
+{
+    data=A.read_from_arduino();
+
+    if(data=="a")
+
+        QMessageBox::information(this, tr("Card is valid!"), "ACCESS GIVEN");
+
+    else if (data=="d")
+
+        QMessageBox::information(this, tr("Card is unvalid"), "ACCESS DENIED");
+}
+
+
+void MainWindow::on_pushButton_10_clicked()
+{
+    A.write_to_arduino("1");
 }

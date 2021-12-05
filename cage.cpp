@@ -114,3 +114,50 @@ QSqlQueryModel* cage::trierCage()
     return model;
 }
 
+
+QSqlQueryModel* cage::trierCage1()
+{
+    QSqlQueryModel* model = new QSqlQueryModel();
+
+        model->setQuery("select *FROM cages ORDER BY taille ASC");
+
+
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("identifiant"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("status"));
+        model->setHeaderData(2, Qt::Horizontal, QObject::tr("datee"));
+        model->setHeaderData(3, Qt::Horizontal, QObject::tr("type"));
+        model->setHeaderData(4, Qt::Horizontal, QObject::tr("taille"));
+
+    return model;
+}
+
+QSqlQueryModel* cage::trierCage2()
+{
+    QSqlQueryModel* model = new QSqlQueryModel();
+
+        model->setQuery("select *FROM cages ORDER BY taille ASC");
+
+
+        model->setHeaderData(0, Qt::Horizontal, QObject::tr("identifiant"));
+        model->setHeaderData(1, Qt::Horizontal, QObject::tr("status"));
+        model->setHeaderData(2, Qt::Horizontal, QObject::tr("datee"));
+        model->setHeaderData(3, Qt::Horizontal, QObject::tr("type"));
+        model->setHeaderData(4, Qt::Horizontal, QObject::tr("taille"));
+
+    return model;
+}
+
+
+
+QSqlQueryModel * cage::chercher(QString a)
+{
+    QSqlQueryModel *model=new QSqlQueryModel();
+    model->setQuery("SELECT * FROM cages WHERE (identifiant LIKE '%"+a+"%' OR status LIKE '%"+a+"%' OR datee LIKE '%"+a+"%' OR type LIKE '%"+a+"%' OR taille LIKE '%"+a+"%' ) ");
+    model->setHeaderData(0, Qt::Horizontal, QObject::tr("identifiant"));
+    model->setHeaderData(1, Qt::Horizontal, QObject::tr("status"));
+    model->setHeaderData(2, Qt::Horizontal, QObject::tr("datee"));
+    model->setHeaderData(3, Qt::Horizontal, QObject::tr("type"));
+    model->setHeaderData(4, Qt::Horizontal, QObject::tr("taille"));
+
+    return model;
+}

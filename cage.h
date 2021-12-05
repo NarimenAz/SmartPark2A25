@@ -25,7 +25,9 @@ public:
     bool modifierCage(int,int,int,QString,QString );
     QSqlQueryModel*  chercherCage(int,int);
     QSqlQueryModel* trierCage();
-
+    QSqlQueryModel* trierCage1();
+    QSqlQueryModel* trierCage2();
+   QSqlQueryModel*  chercher(QString a);
 private:
     int id, status,taille;
     QString type, date;

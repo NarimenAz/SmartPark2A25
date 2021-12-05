@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include"cage.h"
+#include "arduino.h"
 #include <QMainWindow>
 
 
@@ -18,6 +19,9 @@ public:
 
 
 private slots:
+    void update_label();   // slot permettant la mise à jour du label état de la lampe 1,
+        // ce slot est lancé à chaque réception d'un message de Arduino
+
     void on_pb_ajouter_clicked();
 
     void on_pb_supprimer_clicked();
@@ -44,10 +48,23 @@ private slots:
 
     void on_pushButton_7_clicked();
 
+    void on_lineEdit_textEdited(const QString &arg1);
+
+    void on_lineEdit_cursorPositionChanged(int arg1, int arg2);
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_9_clicked();
+
+    void on_pushButton_10_clicked();
+
 private:
     Ui::MainWindow *ui;
     cage C;
     QStringList files;
+    QByteArray data; // variable contenant les données reçues
+
+        Arduino A; // objet temporaire
 };
 
 #endif // MAINWINDOW_H
