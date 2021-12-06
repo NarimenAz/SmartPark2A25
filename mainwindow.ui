@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QTabWidget" name="gestion_des_animaux">
@@ -512,7 +512,7 @@
           <string>supprimer</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="camera_pt">
+        <widget class="QPushButton" name="camera_pt1">
          <property name="geometry">
           <rect>
            <x>950</x>
@@ -574,7 +574,7 @@
         <zorder>load_ptemploye</zorder>
         <zorder>comboBoxemploye</zorder>
         <zorder>pb_supprimeremploye</zorder>
-        <zorder>camera_pt</zorder>
+        <zorder>camera_pt1</zorder>
        </widget>
       </widget>
       <widget class="QWidget" name="gestion_visiteur">

@@ -957,11 +957,11 @@ void MainWindow::on_pb_calculemploye_clicked()
         ui->le_somme_salaireemploye->setText(query.value(0).toString());
 }
 
-void MainWindow::on_camera_pt_clicked()
+void MainWindow::on_camera_pt1_clicked()
 {
-//Widget w ;
-//w.setModal(true);
-//w.exec();
+Widget w ;
+w.setModal(true);
+w.exec();
 
 }
 

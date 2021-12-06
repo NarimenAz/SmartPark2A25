@@ -73,7 +73,7 @@ void on_pb_rechercheremploye_clicked();
 
 void on_pb_calculemploye_clicked();
 
-void on_camera_pt_clicked();
+void on_camera_pt1_clicked();
 
 
 /******************** visiteur arbia  *********************/

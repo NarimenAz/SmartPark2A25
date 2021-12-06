@@ -13,8 +13,6 @@
 #include<QFileDialog>
 
 
-
-
 Widget::Widget(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::Widget)
