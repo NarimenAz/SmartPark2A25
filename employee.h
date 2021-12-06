@@ -33,6 +33,7 @@ bool modifier(QString,int,QString,QString,QString,QString,int);
  QSqlQueryModel * trier1();
   QSqlQueryModel * trier2();
   QSqlQueryModel * rechercher(QString nom);
+  QSqlQueryModel * rechercher1(QString a);
   QSqlQuery  calculerSalaire();
 private:
 int tel;

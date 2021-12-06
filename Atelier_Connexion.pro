@@ -14,7 +14,7 @@ QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = Atelier_Connexion
+TARGET = gestion_des_employees
 TEMPLATE = app
 QT       += core gui multimedia multimediawidgets
 # The following define makes your compiler emit warnings if you use

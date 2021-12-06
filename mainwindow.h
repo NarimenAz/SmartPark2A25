@@ -42,6 +42,14 @@ private slots:
 
     void on_camera_pt_clicked();
 
+    void on_rech_textEdited(const QString &arg1);
+
+    void on_rech_2_textEdited(const QString &arg1);
+
+    void on_pushButton_2_clicked();
+
+    void on_comboBox_2_currentIndexChanged(const QString &arg1);
+
 private:
     Ui::MainWindow *ui;
      Widget *dialog;

@@ -156,19 +156,19 @@ QSqlQueryModel *Employee::trier2()
 
 }
 
-QSqlQueryModel *Employee::rechercher(QString nom)
+QSqlQueryModel *Employee::rechercher1(QString a)
 {
     QSqlQueryModel *model = new QSqlQueryModel();
-    model->setQuery("select * from EMPLOYEE WHERE(nom='"+nom+"')");
-
-    model->setHeaderData(0,Qt::Horizontal,QObject::tr("id"));
-    model->setHeaderData(1,Qt::Horizontal,QObject::tr("nom"));
-    model->setHeaderData(2,Qt::Horizontal,QObject::tr("prenom"));
-    model->setHeaderData(3,Qt::Horizontal,QObject::tr("tel"));
-    model->setHeaderData(4,Qt::Horizontal,QObject::tr("specialite"));
-    model->setHeaderData(5,Qt::Horizontal,QObject::tr("adress"));
-    model->setHeaderData(6, Qt::Horizontal, QObject::tr("salaire"));
+   model->setQuery("SELECT * FROM EMPLOYEE WHERE (ID LIKE '%"+a+"%' OR NOM LIKE '%"+a+"%' OR prenom LIKE '%"+a+"%'  ) ");
+   model->setHeaderData(0,Qt::Horizontal,QObject::tr("id"));
+   model->setHeaderData(1,Qt::Horizontal,QObject::tr("nom"));
+   model->setHeaderData(2,Qt::Horizontal,QObject::tr("prenom"));
+   model->setHeaderData(3,Qt::Horizontal,QObject::tr("tel"));
+   model->setHeaderData(4,Qt::Horizontal,QObject::tr("specialite"));
+   model->setHeaderData(5,Qt::Horizontal,QObject::tr("adress"));
+   model->setHeaderData(6, Qt::Horizontal, QObject::tr("salaire"));
     return  model ;
+
 
 
 
@@ -185,3 +185,5 @@ QSqlQuery  Employee::calculerSalaire()
        return query;
 
 }
+
+

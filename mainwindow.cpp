@@ -155,7 +155,7 @@ void MainWindow::on_pushButton_5_clicked()
     ui->tab_employee->setModel(e.trier2());
 }
 
-void MainWindow::on_pushButton_6_clicked()
+/*void MainWindow::on_pushButton_6_clicked()
 {
     Employee e ;
     QString rech =ui->rech->text();
@@ -166,7 +166,7 @@ void MainWindow::on_pushButton_6_clicked()
         ui->tab_employee->setModel(e.rechercher(rech));
 
 }
-
+*/
 void MainWindow::on_pb_calcul_clicked()
 {
     QSqlQuery query=E.calculerSalaire();
@@ -181,4 +181,44 @@ Widget w ;
 w.setModal(true);
 w.exec();
 
+}
+
+
+void MainWindow::on_rech_2_textEdited(const QString &arg1)
+{
+    ui->tab_employee->setModel(E.rechercher1(arg1));
+
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    QSqlQueryModel *model= new QSqlQueryModel();
+        QSqlQuery   *query= new QSqlQuery();
+        query->prepare("SELECT ID from EMPLOYEE");
+         query->exec();
+         model->setQuery(*query);
+         ui->comboBox_2->setModel(model);
+}
+
+void MainWindow::on_comboBox_2_currentIndexChanged(const QString &arg1)
+{
+    QString id=arg1;
+ QSqlQueryModel *model= new QSqlQueryModel();
+     QSqlQuery   *query= new QSqlQuery();
+      query->prepare("SELECT * from EMPLOYEE where id='"+id+"'");
+      if(query->exec())
+      {
+          while (query->next())
+          {
+
+              ui->le_id->setText(query->value(0).toString());
+              ui->le_nom->setText(query->value(1).toString());
+              ui->le_tel->setText(query->value(2).toString());
+              ui->le_prenom->setText(query->value(3).toString());
+                 ui->le_adress->setText(query->value(4).toString());
+              ui->le_salaire->setText(query->value(5).toString());
+            ui->le_specialite->setText(query->value(6).toString());
+          }
+      }
+      model->setQuery(*query);
 }
