@@ -71,7 +71,7 @@ void on_pb_triprenomemploye_clicked();
 
 void on_pb_rechercheremploye_clicked();
 
-void on_pb_calcul_clicked();
+void on_pb_calculemploye_clicked();
 
 void on_camera_pt_clicked();
 
@@ -201,6 +201,12 @@ void affrechproduit();
 
 
 
+
+void on_tab_employee_clicked(const QModelIndex &index);
+
+void on_tab_visiteur_clicked(const QModelIndex &index);
+
+void on_tab_cage_clicked(const QModelIndex &index);
 
 private:
     Ui::MainWindow *ui;

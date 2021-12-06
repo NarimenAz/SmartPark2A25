@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1254</width>
-    <height>988</height>
+    <width>1314</width>
+    <height>1078</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,25 +19,25 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>1231</width>
-      <height>931</height>
+      <width>1301</width>
+      <height>1001</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QTabWidget" name="gestion_des_animaux">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>10</y>
-        <width>1231</width>
-        <height>1021</height>
+        <x>0</x>
+        <y>0</y>
+        <width>1251</width>
+        <height>991</height>
        </rect>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="gestion_employe">
        <attribute name="title">
@@ -46,9 +46,9 @@
        <widget class="QGroupBox" name="groupBox_2">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>10</x>
           <y>10</y>
-          <width>1181</width>
+          <width>1171</width>
           <height>851</height>
          </rect>
         </property>
@@ -61,7 +61,7 @@
          </font>
         </property>
         <property name="title">
-         <string>ajout</string>
+         <string/>
         </property>
         <widget class="QLabel" name="labelemploye">
          <property name="geometry">
@@ -87,7 +87,7 @@
         <widget class="QLabel" name="label_3employe">
          <property name="geometry">
           <rect>
-           <x>10</x>
+           <x>20</x>
            <y>90</y>
            <width>71</width>
            <height>21</height>
@@ -486,7 +486,7 @@
           <rect>
            <x>950</x>
            <y>670</y>
-           <width>121</width>
+           <width>151</width>
            <height>41</height>
           </rect>
          </property>
@@ -533,6 +533,48 @@
           <string>camera</string>
          </property>
         </widget>
+        <widget class="QLabel" name="labelphotoemploye">
+         <property name="geometry">
+          <rect>
+           <x>-20</x>
+           <y>-30</y>
+           <width>1311</width>
+           <height>1011</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <zorder>labelphotoemploye</zorder>
+        <zorder>labelemploye</zorder>
+        <zorder>label_3employe</zorder>
+        <zorder>label_4employe</zorder>
+        <zorder>le_idemploye</zorder>
+        <zorder>le_prenomemploye</zorder>
+        <zorder>le_nomemploye</zorder>
+        <zorder>pb_ajouteremploye</zorder>
+        <zorder>le_telemploye</zorder>
+        <zorder>le_adressemploye</zorder>
+        <zorder>le_specialiteemploye</zorder>
+        <zorder>label_5employe</zorder>
+        <zorder>label_6employe</zorder>
+        <zorder>label_7employe</zorder>
+        <zorder>pb_modifieremploye</zorder>
+        <zorder>tab_employee</zorder>
+        <zorder>pb_triidemploye</zorder>
+        <zorder>pb_trinomemploye</zorder>
+        <zorder>pb_triprenomemploye</zorder>
+        <zorder>pb_rechercheremploye</zorder>
+        <zorder>rechemploye</zorder>
+        <zorder>pb_calculemploye</zorder>
+        <zorder>le_somme_salaireemploye</zorder>
+        <zorder>le_salaireemploye</zorder>
+        <zorder>label_8employe</zorder>
+        <zorder>load_ptemploye</zorder>
+        <zorder>comboBoxemploye</zorder>
+        <zorder>pb_supprimeremploye</zorder>
+        <zorder>camera_pt</zorder>
        </widget>
       </widget>
       <widget class="QWidget" name="gestion_visiteur">
@@ -542,30 +584,38 @@
        <widget class="QGroupBox" name="groupBox_4">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>20</y>
-          <width>1041</width>
-          <height>711</height>
+          <x>0</x>
+          <y>0</y>
+          <width>1171</width>
+          <height>841</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <family>Lucida Bright</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="title">
-         <string>Ajout</string>
+         <string/>
         </property>
         <widget class="QLabel" name="labelvisiteur_2">
          <property name="geometry">
           <rect>
            <x>20</x>
-           <y>30</y>
+           <y>40</y>
            <width>131</width>
            <height>16</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <family>Ravie</family>
-           <pointsize>9</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -575,19 +625,19 @@
         <widget class="QLabel" name="label_2visiteur">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>70</y>
+           <x>20</x>
+           <y>100</y>
            <width>71</width>
            <height>16</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <family>Ravie</family>
-           <pointsize>9</pointsize>
-           <weight>50</weight>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
            <italic>false</italic>
-           <bold>false</bold>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -597,18 +647,18 @@
         <widget class="QLabel" name="label_3visiteur">
          <property name="geometry">
           <rect>
-           <x>350</x>
-           <y>60</y>
+           <x>20</x>
+           <y>170</y>
            <width>81</width>
            <height>21</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <family>Ravie</family>
-           <pointsize>9</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -618,18 +668,18 @@
         <widget class="QLabel" name="label_4visiteur">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>120</y>
-           <width>56</width>
-           <height>16</height>
+           <x>560</x>
+           <y>30</y>
+           <width>71</width>
+           <height>31</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <family>Ravie</family>
-           <pointsize>9</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -639,18 +689,18 @@
         <widget class="QLabel" name="label_visiteur">
          <property name="geometry">
           <rect>
-           <x>350</x>
-           <y>120</y>
+           <x>560</x>
+           <y>100</y>
            <width>91</width>
            <height>21</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <family>Ravie</family>
-           <pointsize>9</pointsize>
-           <weight>50</weight>
-           <bold>false</bold>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -661,63 +711,105 @@
          <property name="geometry">
           <rect>
            <x>160</x>
-           <y>20</y>
-           <width>121</width>
+           <y>30</y>
+           <width>161</width>
            <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLineEdit" name="le_nomvisiteur">
          <property name="geometry">
           <rect>
            <x>160</x>
-           <y>70</y>
-           <width>121</width>
+           <y>100</y>
+           <width>161</width>
            <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLineEdit" name="le_agevisiteur">
          <property name="geometry">
           <rect>
-           <x>160</x>
-           <y>120</y>
-           <width>121</width>
+           <x>670</x>
+           <y>30</y>
+           <width>141</width>
            <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLineEdit" name="le_adressevisiteur">
          <property name="geometry">
           <rect>
-           <x>460</x>
-           <y>120</y>
-           <width>121</width>
+           <x>670</x>
+           <y>100</y>
+           <width>141</width>
            <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLineEdit" name="le_prenomvisiteur">
          <property name="geometry">
           <rect>
-           <x>460</x>
-           <y>60</y>
-           <width>121</width>
+           <x>160</x>
+           <y>170</y>
+           <width>161</width>
            <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QPushButton" name="pb_ajoutervisiteur">
          <property name="geometry">
           <rect>
-           <x>900</x>
-           <y>60</y>
-           <width>101</width>
+           <x>160</x>
+           <y>240</y>
+           <width>161</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -729,14 +821,16 @@
         <widget class="QPushButton" name="pb_modifiervisiteur">
          <property name="geometry">
           <rect>
-           <x>900</x>
-           <y>120</y>
-           <width>101</width>
+           <x>560</x>
+           <y>240</y>
+           <width>161</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -748,24 +842,26 @@
         <widget class="QTableView" name="tab_visiteur">
          <property name="geometry">
           <rect>
-           <x>0</x>
-           <y>310</y>
-           <width>671</width>
-           <height>311</height>
+           <x>160</x>
+           <y>320</y>
+           <width>771</width>
+           <height>381</height>
           </rect>
          </property>
         </widget>
         <widget class="QPushButton" name="triidvisiteur">
          <property name="geometry">
           <rect>
-           <x>310</x>
-           <y>240</y>
-           <width>101</width>
+           <x>990</x>
+           <y>320</y>
+           <width>151</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -777,14 +873,16 @@
         <widget class="QPushButton" name="pb_actual">
          <property name="geometry">
           <rect>
-           <x>910</x>
-           <y>590</y>
-           <width>101</width>
+           <x>360</x>
+           <y>240</y>
+           <width>161</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -793,46 +891,19 @@
           <string>actualiser</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pb_loadvisiteur">
-         <property name="geometry">
-          <rect>
-           <x>670</x>
-           <y>120</y>
-           <width>101</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>chargement</string>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_modifvisiteur">
-         <property name="geometry">
-          <rect>
-           <x>780</x>
-           <y>130</y>
-           <width>101</width>
-           <height>31</height>
-          </rect>
-         </property>
-        </widget>
         <widget class="QPushButton" name="pb_statvisiteur">
          <property name="geometry">
           <rect>
-           <x>750</x>
-           <y>430</y>
-           <width>101</width>
+           <x>990</x>
+           <y>600</y>
+           <width>151</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -844,14 +915,16 @@
         <widget class="QPushButton" name="le_trinomvisiteur">
          <property name="geometry">
           <rect>
-           <x>560</x>
-           <y>240</y>
-           <width>101</width>
+           <x>990</x>
+           <y>460</y>
+           <width>151</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -863,14 +936,16 @@
         <widget class="QPushButton" name="le_triagevisiteur">
          <property name="geometry">
           <rect>
-           <x>430</x>
-           <y>240</y>
-           <width>101</width>
+           <x>990</x>
+           <y>390</y>
+           <width>151</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -882,14 +957,16 @@
         <widget class="QPushButton" name="le_fich_excel">
          <property name="geometry">
           <rect>
-           <x>750</x>
-           <y>360</y>
-           <width>101</width>
+           <x>990</x>
+           <y>530</y>
+           <width>151</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -901,26 +978,36 @@
         <widget class="QLineEdit" name="le_rechvisiteur">
          <property name="geometry">
           <rect>
-           <x>140</x>
+           <x>990</x>
            <y>240</y>
-           <width>121</width>
-           <height>31</height>
+           <width>151</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLabel" name="labelvisiteur">
          <property name="geometry">
           <rect>
-           <x>10</x>
-           <y>250</y>
+           <x>990</x>
+           <y>210</y>
            <width>101</width>
            <height>16</height>
           </rect>
          </property>
          <property name="font">
           <font>
-           <family>Ravie</family>
-           <pointsize>9</pointsize>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
           </font>
          </property>
          <property name="text">
@@ -930,14 +1017,16 @@
         <widget class="QPushButton" name="pb_fichier_exe">
          <property name="geometry">
           <rect>
-           <x>750</x>
-           <y>500</y>
-           <width>101</width>
+           <x>990</x>
+           <y>670</y>
+           <width>151</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -946,46 +1035,19 @@
           <string>fichier.exe</string>
          </property>
         </widget>
-        <widget class="QComboBox" name="comboBoxxvisiteur">
-         <property name="geometry">
-          <rect>
-           <x>780</x>
-           <y>180</y>
-           <width>101</width>
-           <height>31</height>
-          </rect>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pb_chargementtvisiteur">
-         <property name="geometry">
-          <rect>
-           <x>670</x>
-           <y>170</y>
-           <width>101</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>chargement</string>
-         </property>
-        </widget>
         <widget class="QPushButton" name="le_id_supprimerrvisiteur">
          <property name="geometry">
           <rect>
-           <x>900</x>
-           <y>170</y>
-           <width>101</width>
+           <x>760</x>
+           <y>240</y>
+           <width>161</width>
            <height>41</height>
           </rect>
          </property>
          <property name="font">
           <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
           </font>
@@ -994,621 +1056,660 @@
           <string>supprimer</string>
          </property>
         </widget>
+        <widget class="QLabel" name="labelvisiteurs">
+         <property name="geometry">
+          <rect>
+           <x>-20</x>
+           <y>-20</y>
+           <width>1331</width>
+           <height>1011</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <zorder>labelvisiteurs</zorder>
+        <zorder>labelvisiteur_2</zorder>
+        <zorder>label_2visiteur</zorder>
+        <zorder>label_3visiteur</zorder>
+        <zorder>label_4visiteur</zorder>
+        <zorder>label_visiteur</zorder>
+        <zorder>le_idvisiteur</zorder>
+        <zorder>le_nomvisiteur</zorder>
+        <zorder>le_agevisiteur</zorder>
+        <zorder>le_adressevisiteur</zorder>
+        <zorder>le_prenomvisiteur</zorder>
+        <zorder>pb_ajoutervisiteur</zorder>
+        <zorder>pb_modifiervisiteur</zorder>
+        <zorder>tab_visiteur</zorder>
+        <zorder>triidvisiteur</zorder>
+        <zorder>pb_actual</zorder>
+        <zorder>pb_statvisiteur</zorder>
+        <zorder>le_trinomvisiteur</zorder>
+        <zorder>le_triagevisiteur</zorder>
+        <zorder>le_fich_excel</zorder>
+        <zorder>le_rechvisiteur</zorder>
+        <zorder>labelvisiteur</zorder>
+        <zorder>pb_fichier_exe</zorder>
+        <zorder>le_id_supprimerrvisiteur</zorder>
        </widget>
       </widget>
       <widget class="QWidget" name="gestion_animal">
        <attribute name="title">
         <string>gestion des animaux</string>
        </attribute>
-       <widget class="QLabel" name="idAnim">
+       <widget class="QGroupBox" name="groupBox_7">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>40</y>
-          <width>56</width>
-          <height>31</height>
+          <x>-1</x>
+          <y>-1</y>
+          <width>1221</width>
+          <height>831</height>
          </rect>
         </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="NomAnim">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>100</y>
-          <width>56</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;NOM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="TypeAnim">
-        <property name="geometry">
-         <rect>
-          <x>410</x>
-          <y>170</y>
-          <width>171</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="focusPolicy">
-         <enum>Qt::NoFocus</enum>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;TYPE &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="AgeAnim">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>150</y>
-          <width>71</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;AGE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="PaysAnim">
-        <property name="geometry">
-         <rect>
-          <x>910</x>
-          <y>40</y>
-          <width>56</width>
-          <height>30</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>12</pointsize>
-          <weight>75</weight>
-          <italic>false</italic>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;PAYS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="le_idAnim">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>40</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
+        <property name="title">
          <string/>
         </property>
-       </widget>
-       <widget class="QLineEdit" name="le_nom">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>100</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="le_typeAnimal">
-        <property name="geometry">
-         <rect>
-          <x>590</x>
-          <y>170</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="le_pays">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>40</y>
-          <width>181</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-       </widget>
-       <widget class="QLabel" name="regimAnim">
-        <property name="geometry">
-         <rect>
-          <x>410</x>
-          <y>50</y>
-          <width>211</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;R.ALIMENT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pb_pdf">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>520</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="text">
-         <string>pdf</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="bp_ajouter">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>280</y>
-          <width>201</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="text">
-         <string>ajouter</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_2">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>1211</width>
-          <height>891</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string/>
-        </property>
-        <property name="pixmap">
-         <pixmap>../../Desktop/fond zoo.jpg</pixmap>
-        </property>
-       </widget>
-       <widget class="QLabel" name="status">
-        <property name="geometry">
-         <rect>
-          <x>410</x>
-          <y>100</y>
-          <width>141</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>14</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;STATUS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="le_status">
-        <property name="geometry">
-         <rect>
-          <x>590</x>
-          <y>100</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pb_modifier">
-        <property name="geometry">
-         <rect>
-          <x>580</x>
-          <y>280</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="text">
-         <string>MODIFIER</string>
-        </property>
-       </widget>
-       <widget class="QTableView" name="tab_animaux">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>360</y>
-          <width>861</width>
-          <height>441</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pb_supprimer">
-        <property name="geometry">
-         <rect>
-          <x>800</x>
-          <y>280</y>
-          <width>171</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="text">
-         <string>SUPPRIMER </string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pb_afficher">
-        <property name="geometry">
-         <rect>
-          <x>350</x>
-          <y>280</y>
-          <width>191</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="cursor">
-         <cursorShape>PointingHandCursor</cursorShape>
-        </property>
-        <property name="text">
-         <string>afficher</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pb_reset">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>600</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>reset</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="le_age">
-        <property name="geometry">
-         <rect>
-          <x>110</x>
-          <y>160</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pb_imprimer">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>440</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>imprimer</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="le_regime">
-        <property name="geometry">
-         <rect>
-          <x>590</x>
-          <y>40</y>
-          <width>201</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-       </widget>
-       <widget class="QComboBox" name="comboBox_trier">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>760</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <item>
-         <property name="text">
-          <string>trier</string>
+        <widget class="QComboBox" name="comboBox_trier">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>760</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
          </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>tri par id</string>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>tri par age</string>
+         <item>
+          <property name="text">
+           <string>trier</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>tri par id</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>tri par age</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>tri par pays</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="pb_afficher">
+         <property name="geometry">
+          <rect>
+           <x>350</x>
+           <y>280</y>
+           <width>191</width>
+           <height>41</height>
+          </rect>
          </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>tri par pays</string>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
-        </item>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>afficher</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="PaysAnim">
+         <property name="geometry">
+          <rect>
+           <x>910</x>
+           <y>40</y>
+           <width>56</width>
+           <height>30</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;PAYS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_nom">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>100</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_pdf">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>520</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>pdf</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="AgeAnim">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>150</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;AGE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_code">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>680</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>QrCode</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_imprimer">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>440</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>imprimer</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="NomAnim">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>100</y>
+           <width>56</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;NOM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_modifier">
+         <property name="geometry">
+          <rect>
+           <x>580</x>
+           <y>280</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>MODIFIER</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_supprimer">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>280</y>
+           <width>171</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>SUPPRIMER </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_pays">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>40</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="bp_ajouter">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>280</y>
+           <width>201</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>ajouter</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_stat">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>360</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>statistiques</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="TypeAnim">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>170</y>
+           <width>171</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="focusPolicy">
+          <enum>Qt::NoFocus</enum>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;TYPE &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_idAnim">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>40</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_age">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>160</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="idAnim">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>40</y>
+           <width>56</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_rechercher">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>280</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_status">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>100</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QTableView" name="tab_animaux">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>360</y>
+           <width>861</width>
+           <height>441</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_qrcode">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>80</y>
+           <width>211</width>
+           <height>171</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>qrcode label</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_typeAnimal">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>170</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pb_reset">
+         <property name="geometry">
+          <rect>
+           <x>1010</x>
+           <y>600</y>
+           <width>181</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>reset</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="le_regime">
+         <property name="geometry">
+          <rect>
+           <x>590</x>
+           <y>40</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+        </widget>
+        <widget class="QLabel" name="status">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>100</y>
+           <width>141</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>14</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;STATUS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="regimAnim">
+         <property name="geometry">
+          <rect>
+           <x>410</x>
+           <y>50</y>
+           <width>211</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>11</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#000000;&quot;&gt;R.ALIMENT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="labelanimaux">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1221</width>
+           <height>861</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
+        <zorder>labelanimaux</zorder>
+        <zorder>comboBox_trier</zorder>
+        <zorder>pb_afficher</zorder>
+        <zorder>PaysAnim</zorder>
+        <zorder>le_nom</zorder>
+        <zorder>pb_pdf</zorder>
+        <zorder>AgeAnim</zorder>
+        <zorder>pb_code</zorder>
+        <zorder>pb_imprimer</zorder>
+        <zorder>NomAnim</zorder>
+        <zorder>pb_modifier</zorder>
+        <zorder>pb_supprimer</zorder>
+        <zorder>le_pays</zorder>
+        <zorder>bp_ajouter</zorder>
+        <zorder>pb_stat</zorder>
+        <zorder>TypeAnim</zorder>
+        <zorder>le_idAnim</zorder>
+        <zorder>le_age</zorder>
+        <zorder>idAnim</zorder>
+        <zorder>le_rechercher</zorder>
+        <zorder>le_status</zorder>
+        <zorder>tab_animaux</zorder>
+        <zorder>label_qrcode</zorder>
+        <zorder>le_typeAnimal</zorder>
+        <zorder>pb_reset</zorder>
+        <zorder>le_regime</zorder>
+        <zorder>status</zorder>
+        <zorder>regimAnim</zorder>
        </widget>
-       <widget class="QPushButton" name="pb_stat">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>360</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>statistiques</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="pb_code">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>680</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <family>Lucida Bright</family>
-          <pointsize>11</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>QrCode</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_qrcode">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>80</y>
-          <width>211</width>
-          <height>171</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>qrcode label</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="le_rechercher">
-        <property name="geometry">
-         <rect>
-          <x>1010</x>
-          <y>280</y>
-          <width>181</width>
-          <height>41</height>
-         </rect>
-        </property>
-       </widget>
-       <zorder>label_2</zorder>
-       <zorder>idAnim</zorder>
-       <zorder>NomAnim</zorder>
-       <zorder>TypeAnim</zorder>
-       <zorder>AgeAnim</zorder>
-       <zorder>PaysAnim</zorder>
-       <zorder>le_idAnim</zorder>
-       <zorder>le_nom</zorder>
-       <zorder>le_typeAnimal</zorder>
-       <zorder>le_pays</zorder>
-       <zorder>regimAnim</zorder>
-       <zorder>pb_pdf</zorder>
-       <zorder>bp_ajouter</zorder>
-       <zorder>status</zorder>
-       <zorder>le_status</zorder>
-       <zorder>pb_modifier</zorder>
-       <zorder>tab_animaux</zorder>
-       <zorder>pb_supprimer</zorder>
-       <zorder>pb_afficher</zorder>
-       <zorder>pb_reset</zorder>
-       <zorder>le_age</zorder>
-       <zorder>pb_imprimer</zorder>
-       <zorder>le_regime</zorder>
-       <zorder>comboBox_trier</zorder>
-       <zorder>pb_stat</zorder>
-       <zorder>pb_code</zorder>
-       <zorder>label_qrcode</zorder>
-       <zorder>le_rechercher</zorder>
       </widget>
       <widget class="QWidget" name="gestion_cage">
        <property name="font">
@@ -1624,14 +1725,14 @@
        <widget class="QGroupBox" name="groupBox_3">
         <property name="geometry">
          <rect>
-          <x>30</x>
+          <x>0</x>
           <y>10</y>
-          <width>1101</width>
-          <height>661</height>
+          <width>1161</width>
+          <height>651</height>
          </rect>
         </property>
         <property name="title">
-         <string>Ajout</string>
+         <string/>
         </property>
         <widget class="QLineEdit" name="idcage">
          <property name="geometry">
@@ -1657,7 +1758,7 @@
          <property name="geometry">
           <rect>
            <x>130</x>
-           <y>160</y>
+           <y>150</y>
            <width>113</width>
            <height>31</height>
           </rect>
@@ -1693,85 +1794,11 @@
           </rect>
          </property>
         </widget>
-        <widget class="QLabel" name="label_10cage">
-         <property name="geometry">
-          <rect>
-           <x>940</x>
-           <y>20</y>
-           <width>201</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>suppression</string>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBoxcage">
-         <property name="geometry">
-          <rect>
-           <x>940</x>
-           <y>90</y>
-           <width>131</width>
-           <height>41</height>
-          </rect>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_3cage">
-         <property name="geometry">
-          <rect>
-           <x>939</x>
-           <y>40</y>
-           <width>131</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>load</string>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_2cage">
-         <property name="geometry">
-          <rect>
-           <x>750</x>
-           <y>90</y>
-           <width>121</width>
-           <height>41</height>
-          </rect>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pushButton_4cage">
-         <property name="geometry">
-          <rect>
-           <x>750</x>
-           <y>40</y>
-           <width>121</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>load</string>
-         </property>
-        </widget>
         <widget class="QLineEdit" name="filecage">
          <property name="geometry">
           <rect>
            <x>940</x>
-           <y>480</y>
+           <y>470</y>
            <width>131</width>
            <height>31</height>
           </rect>
@@ -1780,9 +1807,9 @@
         <widget class="QLineEdit" name="lineEditcage">
          <property name="geometry">
           <rect>
-           <x>950</x>
+           <x>940</x>
            <y>580</y>
-           <width>121</width>
+           <width>131</width>
            <height>31</height>
           </rect>
          </property>
@@ -1881,7 +1908,7 @@
          <property name="geometry">
           <rect>
            <x>940</x>
-           <y>350</y>
+           <y>340</y>
            <width>131</width>
            <height>41</height>
           </rect>
@@ -1899,7 +1926,7 @@
          <property name="geometry">
           <rect>
            <x>940</x>
-           <y>420</y>
+           <y>400</y>
            <width>131</width>
            <height>41</height>
           </rect>
@@ -1913,47 +1940,11 @@
           <string>image</string>
          </property>
         </widget>
-        <widget class="QPushButton" name="pb_modifiercage">
-         <property name="geometry">
-          <rect>
-           <x>750</x>
-           <y>140</y>
-           <width>121</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>modifier</string>
-         </property>
-        </widget>
-        <widget class="QPushButton" name="pb_supprimercage">
-         <property name="geometry">
-          <rect>
-           <x>940</x>
-           <y>140</y>
-           <width>131</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>supprimer</string>
-         </property>
-        </widget>
         <widget class="QPushButton" name="pushButton_5cage">
          <property name="geometry">
           <rect>
            <x>940</x>
-           <y>530</y>
+           <y>520</y>
            <width>131</width>
            <height>41</height>
           </rect>
@@ -2025,7 +2016,7 @@
          <property name="geometry">
           <rect>
            <x>20</x>
-           <y>160</y>
+           <y>150</y>
            <width>71</width>
            <height>31</height>
           </rect>
@@ -2075,25 +2066,36 @@
           <string>date</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_10cage_2">
-         <property name="geometry">
-          <rect>
-           <x>750</x>
-           <y>20</y>
-           <width>201</width>
-           <height>16</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>modificaton</string>
-         </property>
-        </widget>
        </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="labelphotocage">
+        <property name="geometry">
+         <rect>
+          <x>-5</x>
+          <y>-10</y>
+          <width>1271</width>
+          <height>971</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <zorder>labelphotocage</zorder>
+       <zorder>groupBox_3</zorder>
+       <zorder>label_7</zorder>
       </widget>
       <widget class="QWidget" name="gestion_produit">
        <attribute name="title">
@@ -2102,23 +2104,31 @@
        <widget class="QGroupBox" name="groupBox_5">
         <property name="geometry">
          <rect>
-          <x>30</x>
-          <y>20</y>
-          <width>731</width>
-          <height>491</height>
+          <x>10</x>
+          <y>10</y>
+          <width>1141</width>
+          <height>681</height>
          </rect>
         </property>
         <property name="title">
-         <string>gestion produit</string>
+         <string/>
         </property>
         <widget class="QPushButton" name="pushButton_5produit">
          <property name="geometry">
           <rect>
-           <x>130</x>
+           <x>170</x>
            <y>30</y>
-           <width>75</width>
-           <height>23</height>
+           <width>121</width>
+           <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="text">
           <string>Changer</string>
@@ -2128,29 +2138,16 @@
          <property name="geometry">
           <rect>
            <x>30</x>
-           <y>50</y>
-           <width>631</width>
-           <height>371</height>
+           <y>70</y>
+           <width>971</width>
+           <height>571</height>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">QTabWidget::pane {
-  border: 1px solid lightgray;
-  top:-1px; 
-  background-color: rgb(53,221,63);
-} 
-QTabBar::tab {
-  background:  rgb(53,221,63);
-  border: 1px solid lightgray; 
-  padding: 10px;
-} 
-QTabBar::tab:selected { 
-  background:  green;
-  margin-bottom: -1px; 
-}</string>
+          <string notr="true"/>
          </property>
          <property name="currentIndex">
-          <number>3</number>
+          <number>0</number>
          </property>
          <property name="documentMode">
           <bool>true</bool>
@@ -2162,23 +2159,31 @@ QTabBar::tab:selected {
           <widget class="QGroupBox" name="groupBox_6">
            <property name="geometry">
             <rect>
-             <x>19</x>
-             <y>20</y>
-             <width>501</width>
-             <height>321</height>
+             <x>10</x>
+             <y>10</y>
+             <width>931</width>
+             <height>481</height>
             </rect>
            </property>
            <property name="title">
-            <string>Ajout</string>
+            <string/>
            </property>
            <widget class="QLabel" name="labelproduit">
             <property name="geometry">
              <rect>
               <x>20</x>
               <y>30</y>
-              <width>61</width>
+              <width>101</width>
               <height>21</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Identifiant</string>
@@ -2188,10 +2193,18 @@ QTabBar::tab:selected {
             <property name="geometry">
              <rect>
               <x>20</x>
-              <y>70</y>
+              <y>100</y>
               <width>47</width>
               <height>14</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Nom</string>
@@ -2201,10 +2214,18 @@ QTabBar::tab:selected {
             <property name="geometry">
              <rect>
               <x>20</x>
-              <y>110</y>
-              <width>71</width>
+              <y>160</y>
+              <width>121</width>
               <height>21</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Catégorie</string>
@@ -2213,41 +2234,73 @@ QTabBar::tab:selected {
            <widget class="QLineEdit" name="le_idproduit">
             <property name="geometry">
              <rect>
-              <x>110</x>
+              <x>172</x>
               <y>30</y>
-              <width>113</width>
-              <height>20</height>
+              <width>131</width>
+              <height>31</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
            </widget>
            <widget class="QLineEdit" name="le_nomproduit">
             <property name="geometry">
              <rect>
-              <x>110</x>
-              <y>70</y>
-              <width>113</width>
-              <height>20</height>
+              <x>172</x>
+              <y>90</y>
+              <width>131</width>
+              <height>31</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
            </widget>
            <widget class="QLineEdit" name="le_categorieproduit">
             <property name="geometry">
              <rect>
-              <x>110</x>
-              <y>110</y>
-              <width>113</width>
-              <height>20</height>
+              <x>172</x>
+              <y>150</y>
+              <width>131</width>
+              <height>31</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
            </widget>
            <widget class="QPushButton" name="pb_ajouterproduit">
             <property name="geometry">
              <rect>
-              <x>300</x>
+              <x>390</x>
               <y>220</y>
-              <width>75</width>
-              <height>23</height>
+              <width>101</width>
+              <height>41</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Ajouter</string>
@@ -2256,31 +2309,55 @@ QTabBar::tab:selected {
            <widget class="QLineEdit" name="le_prixproduit">
             <property name="geometry">
              <rect>
-              <x>110</x>
-              <y>150</y>
-              <width>113</width>
-              <height>20</height>
+              <x>172</x>
+              <y>210</y>
+              <width>131</width>
+              <height>31</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
            </widget>
            <widget class="QLineEdit" name="le_quantiteproduit">
             <property name="geometry">
              <rect>
-              <x>80</x>
-              <y>200</y>
-              <width>113</width>
-              <height>20</height>
+              <x>172</x>
+              <y>270</y>
+              <width>131</width>
+              <height>31</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
            </widget>
            <widget class="QLabel" name="label_5produit">
             <property name="geometry">
              <rect>
               <x>20</x>
-              <y>150</y>
+              <y>210</y>
               <width>47</width>
               <height>21</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Prix</string>
@@ -2290,10 +2367,18 @@ QTabBar::tab:selected {
             <property name="geometry">
              <rect>
               <x>20</x>
-              <y>203</y>
-              <width>47</width>
-              <height>21</height>
+              <y>280</y>
+              <width>91</width>
+              <height>31</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Quantite</string>
@@ -2302,11 +2387,19 @@ QTabBar::tab:selected {
            <widget class="QPushButton" name="pushButtonproduit">
             <property name="geometry">
              <rect>
-              <x>300</x>
-              <y>180</y>
-              <width>75</width>
-              <height>23</height>
+              <x>390</x>
+              <y>162</y>
+              <width>101</width>
+              <height>41</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>modifier</string>
@@ -2315,11 +2408,19 @@ QTabBar::tab:selected {
            <widget class="QPushButton" name="pushButton_6produit">
             <property name="geometry">
              <rect>
-              <x>300</x>
+              <x>390</x>
               <y>30</y>
-              <width>75</width>
-              <height>23</height>
+              <width>101</width>
+              <height>31</height>
              </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Lucida Bright</family>
+              <pointsize>10</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
             </property>
             <property name="text">
              <string>Generer</string>
@@ -2335,9 +2436,9 @@ QTabBar::tab:selected {
            <property name="geometry">
             <rect>
              <x>30</x>
-             <y>100</y>
-             <width>471</width>
-             <height>201</height>
+             <y>180</y>
+             <width>751</width>
+             <height>241</height>
             </rect>
            </property>
           </widget>
@@ -2345,19 +2446,19 @@ QTabBar::tab:selected {
            <property name="geometry">
             <rect>
              <x>190</x>
-             <y>20</y>
-             <width>113</width>
-             <height>20</height>
+             <y>19</y>
+             <width>111</width>
+             <height>41</height>
             </rect>
            </property>
           </widget>
           <widget class="QComboBox" name="selonproduit">
            <property name="geometry">
             <rect>
-             <x>110</x>
+             <x>71</x>
              <y>20</y>
-             <width>62</width>
-             <height>22</height>
+             <width>101</width>
+             <height>41</height>
             </rect>
            </property>
            <item>
@@ -2379,10 +2480,10 @@ QTabBar::tab:selected {
           <widget class="QComboBox" name="comboBoxTriproduit">
            <property name="geometry">
             <rect>
-             <x>110</x>
-             <y>60</y>
-             <width>62</width>
-             <height>22</height>
+             <x>71</x>
+             <y>90</y>
+             <width>101</width>
+             <height>41</height>
             </rect>
            </property>
            <item>
@@ -2405,9 +2506,9 @@ QTabBar::tab:selected {
            <property name="geometry">
             <rect>
              <x>190</x>
-             <y>60</y>
-             <width>75</width>
-             <height>23</height>
+             <y>90</y>
+             <width>111</width>
+             <height>41</height>
             </rect>
            </property>
            <property name="text">
@@ -2422,11 +2523,19 @@ QTabBar::tab:selected {
           <widget class="QLabel" name="label_4produit">
            <property name="geometry">
             <rect>
-             <x>40</x>
-             <y>40</y>
-             <width>61</width>
-             <height>16</height>
+             <x>20</x>
+             <y>50</y>
+             <width>101</width>
+             <height>21</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Bright</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
            </property>
            <property name="text">
             <string>Identifiant</string>
@@ -2435,11 +2544,19 @@ QTabBar::tab:selected {
           <widget class="QPushButton" name="pb_supprimerproduit">
            <property name="geometry">
             <rect>
-             <x>140</x>
-             <y>110</y>
-             <width>75</width>
-             <height>23</height>
+             <x>160</x>
+             <y>90</y>
+             <width>131</width>
+             <height>41</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Bright</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
            </property>
            <property name="text">
             <string>Supprimer</string>
@@ -2448,11 +2565,19 @@ QTabBar::tab:selected {
           <widget class="QLineEdit" name="le_id_suppproduit">
            <property name="geometry">
             <rect>
-             <x>120</x>
+             <x>160</x>
              <y>40</y>
-             <width>113</width>
-             <height>20</height>
+             <width>131</width>
+             <height>31</height>
             </rect>
+           </property>
+           <property name="font">
+            <font>
+             <family>Lucida Bright</family>
+             <pointsize>10</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
            </property>
           </widget>
          </widget>
@@ -2482,10 +2607,10 @@ QTabBar::tab:selected {
           <widget class="QPushButton" name="pushButton_4produit">
            <property name="geometry">
             <rect>
-             <x>210</x>
+             <x>190</x>
              <y>210</y>
-             <width>75</width>
-             <height>23</height>
+             <width>111</width>
+             <height>31</height>
             </rect>
            </property>
            <property name="text">
@@ -2495,9 +2620,9 @@ QTabBar::tab:selected {
           <widget class="QPlainTextEdit" name="texteproduit">
            <property name="geometry">
             <rect>
-             <x>180</x>
+             <x>190</x>
              <y>120</y>
-             <width>131</width>
+             <width>161</width>
              <height>71</height>
             </rect>
            </property>
@@ -2507,8 +2632,8 @@ QTabBar::tab:selected {
             <rect>
              <x>190</x>
              <y>80</y>
-             <width>113</width>
-             <height>20</height>
+             <width>161</width>
+             <height>31</height>
             </rect>
            </property>
           </widget>
@@ -2517,8 +2642,8 @@ QTabBar::tab:selected {
             <rect>
              <x>190</x>
              <y>40</y>
-             <width>113</width>
-             <height>20</height>
+             <width>161</width>
+             <height>31</height>
             </rect>
            </property>
           </widget>
@@ -2527,11 +2652,19 @@ QTabBar::tab:selected {
         <widget class="QComboBox" name="comboBoxproduit">
          <property name="geometry">
           <rect>
-           <x>60</x>
+           <x>31</x>
            <y>30</y>
-           <width>62</width>
-           <height>22</height>
+           <width>121</width>
+           <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <item>
           <property name="text">
@@ -2545,6 +2678,21 @@ QTabBar::tab:selected {
          </item>
         </widget>
        </widget>
+       <widget class="QLabel" name="labelphotoproduit">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>-20</y>
+          <width>1271</width>
+          <height>921</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <zorder>labelphotoproduit</zorder>
+       <zorder>groupBox_5</zorder>
       </widget>
       <widget class="QWidget" name="gestion_event">
        <attribute name="title">
@@ -2553,23 +2701,31 @@ QTabBar::tab:selected {
        <widget class="QGroupBox" name="groupBox">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>20</y>
-          <width>1141</width>
-          <height>611</height>
+          <x>10</x>
+          <y>10</y>
+          <width>1151</width>
+          <height>911</height>
          </rect>
         </property>
         <property name="title">
-         <string>Ajouter un évènement</string>
+         <string/>
         </property>
         <widget class="QLabel" name="labelevent">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>60</y>
+           <x>20</x>
+           <y>40</y>
            <width>56</width>
            <height>16</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="text">
           <string>ID</string>
@@ -2578,21 +2734,37 @@ QTabBar::tab:selected {
         <widget class="QLineEdit" name="lineEdit_IDevent">
          <property name="geometry">
           <rect>
-           <x>220</x>
-           <y>60</y>
-           <width>113</width>
-           <height>22</height>
+           <x>100</x>
+           <y>30</y>
+           <width>141</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLabel" name="label_2event">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>130</y>
+           <x>20</x>
+           <y>120</y>
            <width>56</width>
-           <height>16</height>
+           <height>31</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="text">
           <string>Nom</string>
@@ -2601,21 +2773,37 @@ QTabBar::tab:selected {
         <widget class="QLineEdit" name="lineEdit_Nomevent">
          <property name="geometry">
           <rect>
-           <x>220</x>
-           <y>130</y>
-           <width>113</width>
-           <height>22</height>
+           <x>100</x>
+           <y>111</y>
+           <width>141</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLabel" name="label_3event">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>200</y>
-           <width>56</width>
-           <height>16</height>
+           <x>390</x>
+           <y>40</y>
+           <width>71</width>
+           <height>21</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="text">
           <string>Date</string>
@@ -2624,11 +2812,19 @@ QTabBar::tab:selected {
         <widget class="QLabel" name="label_4event">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>270</y>
-           <width>56</width>
-           <height>16</height>
+           <x>400</x>
+           <y>120</y>
+           <width>81</width>
+           <height>21</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="text">
           <string>Thème</string>
@@ -2637,50 +2833,82 @@ QTabBar::tab:selected {
         <widget class="QLineEdit" name="lineEdit_Themeevent">
          <property name="geometry">
           <rect>
-           <x>220</x>
-           <y>270</y>
-           <width>113</width>
-           <height>22</height>
+           <x>530</x>
+           <y>111</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLabel" name="label_5event">
          <property name="geometry">
           <rect>
-           <x>30</x>
-           <y>330</y>
-           <width>181</width>
-           <height>16</height>
+           <x>750</x>
+           <y>40</y>
+           <width>201</width>
+           <height>31</height>
           </rect>
          </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
          <property name="text">
-          <string>Nombre d'employés requis</string>
+          <string>Nbr d'employés requis</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pb_ajouterevent">
          <property name="geometry">
           <rect>
-           <x>90</x>
-           <y>420</y>
-           <width>93</width>
-           <height>28</height>
+           <x>100</x>
+           <y>320</y>
+           <width>141</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="text">
-          <string>Valider</string>
+          <string>ajouter</string>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_2event">
          <property name="geometry">
           <rect>
-           <x>280</x>
-           <y>420</y>
-           <width>93</width>
-           <height>28</height>
+           <x>940</x>
+           <y>780</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2692,31 +2920,55 @@ QTabBar::tab:selected {
         <widget class="QLineEdit" name="lineEdit_Dateevent">
          <property name="geometry">
           <rect>
-           <x>220</x>
-           <y>200</y>
-           <width>113</width>
-           <height>22</height>
+           <x>530</x>
+           <y>30</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QLineEdit" name="lineEdit_NbEmployesevent">
          <property name="geometry">
           <rect>
-           <x>220</x>
-           <y>330</y>
-           <width>113</width>
-           <height>22</height>
+           <x>960</x>
+           <y>30</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
         </widget>
         <widget class="QComboBox" name="comboBoxevent">
          <property name="geometry">
           <rect>
-           <x>740</x>
-           <y>20</y>
-           <width>111</width>
-           <height>31</height>
+           <x>940</x>
+           <y>710</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <item>
           <property name="text">
@@ -2737,11 +2989,19 @@ QTabBar::tab:selected {
         <widget class="QPushButton" name="Supprimerevent">
          <property name="geometry">
           <rect>
-           <x>750</x>
-           <y>370</y>
-           <width>93</width>
-           <height>28</height>
+           <x>710</x>
+           <y>320</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2753,11 +3013,19 @@ QTabBar::tab:selected {
         <widget class="QPushButton" name="Afficherevent">
          <property name="geometry">
           <rect>
-           <x>510</x>
-           <y>20</y>
-           <width>93</width>
-           <height>28</height>
+           <x>290</x>
+           <y>320</y>
+           <width>151</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2769,11 +3037,19 @@ QTabBar::tab:selected {
         <widget class="QPushButton" name="Rechercheevent">
          <property name="geometry">
           <rect>
-           <x>210</x>
-           <y>560</y>
-           <width>93</width>
-           <height>28</height>
+           <x>940</x>
+           <y>830</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2785,11 +3061,19 @@ QTabBar::tab:selected {
         <widget class="QPushButton" name="Modifierevent">
          <property name="geometry">
           <rect>
-           <x>960</x>
-           <y>20</y>
-           <width>93</width>
-           <height>28</height>
+           <x>500</x>
+           <y>320</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2801,11 +3085,19 @@ QTabBar::tab:selected {
         <widget class="QPushButton" name="Statistiqueevent">
          <property name="geometry">
           <rect>
-           <x>750</x>
-           <y>420</y>
-           <width>93</width>
-           <height>28</height>
+           <x>940</x>
+           <y>390</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2820,21 +3112,29 @@ QTabBar::tab:selected {
         <widget class="QCalendarWidget" name="calendarWidget">
          <property name="geometry">
           <rect>
-           <x>850</x>
-           <y>370</y>
-           <width>271</width>
-           <height>231</height>
+           <x>750</x>
+           <y>90</y>
+           <width>371</width>
+           <height>201</height>
           </rect>
          </property>
         </widget>
         <widget class="QPushButton" name="Resetevent">
          <property name="geometry">
           <rect>
-           <x>750</x>
+           <x>940</x>
            <y>470</y>
-           <width>93</width>
-           <height>28</height>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2846,21 +3146,29 @@ QTabBar::tab:selected {
         <widget class="QLineEdit" name="lineEditevent">
          <property name="geometry">
           <rect>
-           <x>70</x>
-           <y>560</y>
-           <width>113</width>
-           <height>22</height>
+           <x>940</x>
+           <y>320</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
          </property>
         </widget>
         <widget class="QPushButton" name="pushButton_8event">
          <property name="geometry">
           <rect>
-           <x>760</x>
-           <y>520</y>
-           <width>93</width>
-           <height>28</height>
+           <x>940</x>
+           <y>560</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2869,24 +3177,22 @@ QTabBar::tab:selected {
           <string>Calendrier</string>
          </property>
         </widget>
-        <widget class="QTableView" name="table_event">
-         <property name="geometry">
-          <rect>
-           <x>500</x>
-           <y>70</y>
-           <width>631</width>
-           <height>281</height>
-          </rect>
-         </property>
-        </widget>
         <widget class="QPushButton" name="pushButton_11event">
          <property name="geometry">
           <rect>
-           <x>760</x>
-           <y>570</y>
-           <width>93</width>
-           <height>28</height>
+           <x>940</x>
+           <y>640</y>
+           <width>161</width>
+           <height>41</height>
           </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Lucida Bright</family>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
          </property>
          <property name="cursor">
           <cursorShape>PointingHandCursor</cursorShape>
@@ -2895,7 +3201,32 @@ QTabBar::tab:selected {
           <string>PDF</string>
          </property>
         </widget>
+        <widget class="QTableView" name="table_event">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>390</y>
+           <width>771</width>
+           <height>441</height>
+          </rect>
+         </property>
+        </widget>
        </widget>
+       <widget class="QLabel" name="labelphotoevent">
+        <property name="geometry">
+         <rect>
+          <x>-5</x>
+          <y>-25</y>
+          <width>1301</width>
+          <height>1031</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <zorder>labelphotoevent</zorder>
+       <zorder>groupBox</zorder>
       </widget>
      </widget>
     </widget>
@@ -2903,23 +3234,35 @@ QTabBar::tab:selected {
      <widget class="QGroupBox" name="groupBoxlogin">
       <property name="geometry">
        <rect>
-        <x>140</x>
-        <y>20</y>
-        <width>671</width>
-        <height>411</height>
+        <x>40</x>
+        <y>10</y>
+        <width>971</width>
+        <height>991</height>
        </rect>
       </property>
       <property name="title">
-       <string>GroupBox</string>
+       <string>bienvenue</string>
       </property>
       <widget class="QPushButton" name="login_1">
        <property name="geometry">
         <rect>
-         <x>120</x>
-         <y>180</y>
-         <width>75</width>
-         <height>23</height>
+         <x>630</x>
+         <y>460</y>
+         <width>121</width>
+         <height>41</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lucida Bright</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>OpenHandCursor</cursorShape>
        </property>
        <property name="text">
         <string>login</string>
@@ -2928,37 +3271,64 @@ QTabBar::tab:selected {
       <widget class="QLabel" name="label_16">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>70</y>
-         <width>81</width>
-         <height>16</height>
+         <x>410</x>
+         <y>320</y>
+         <width>131</width>
+         <height>21</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <family>Lucida Bright</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
        <property name="text">
-        <string>username</string>
+        <string>Utilisateur</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_17">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>120</y>
-         <width>71</width>
-         <height>16</height>
+         <x>410</x>
+         <y>370</y>
+         <width>181</width>
+         <height>31</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <family>Lucida Bright</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
        <property name="text">
-        <string>password</string>
+        <string>Mot de passe</string>
        </property>
       </widget>
       <widget class="QLineEdit" name="password_1">
        <property name="geometry">
         <rect>
-         <x>120</x>
-         <y>120</y>
-         <width>113</width>
-         <height>20</height>
+         <x>630</x>
+         <y>370</y>
+         <width>141</width>
+         <height>31</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Lucida Bright</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
        </property>
        <property name="echoMode">
         <enum>QLineEdit::Password</enum>
@@ -2967,13 +3337,64 @@ QTabBar::tab:selected {
       <widget class="QLineEdit" name="username_1">
        <property name="geometry">
         <rect>
-         <x>120</x>
-         <y>70</y>
-         <width>113</width>
-         <height>20</height>
+         <x>630</x>
+         <y>310</y>
+         <width>141</width>
+         <height>31</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <family>Lucida Bright</family>
+         <pointsize>14</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <underline>true</underline>
+        </font>
+       </property>
       </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>230</x>
+         <y>236</y>
+         <width>401</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Matura MT Script Capitals</family>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="toolTipDuration">
+        <number>-1</number>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt; font-weight:600; font-style:italic; color:#027406;&quot;&gt;bienvenue à zoolanders&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="labelphotologin">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>10</y>
+         <width>971</width>
+         <height>981</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <zorder>labelphotologin</zorder>
+      <zorder>login_1</zorder>
+      <zorder>label_16</zorder>
+      <zorder>label_17</zorder>
+      <zorder>password_1</zorder>
+      <zorder>username_1</zorder>
+      <zorder>label_2</zorder>
      </widget>
     </widget>
    </widget>
@@ -2983,7 +3404,7 @@ QTabBar::tab:selected {
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1254</width>
+     <width>1314</width>
      <height>26</height>
     </rect>
    </property>

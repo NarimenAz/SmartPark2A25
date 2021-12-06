@@ -96,7 +96,7 @@ ui->tab_animaux->setModel(A.afficherAnim());
         /****** OMAR GEST EMPLOYES ***/
 
 
-      //  ui->stackedWidget->setCurrentIndex(1);
+        ui->stackedWidget->setCurrentIndex(1);
     ui->tab_employee->setModel(E.afficherEmploye());
     ui->le_idemploye->setValidator(new QIntValidator(1000,9999,this));
     ui->le_telemploye->setValidator(new QIntValidator(10000000,99999999,this));
@@ -123,7 +123,7 @@ ui->tab_animaux->setModel(A.afficherAnim());
 
     /****** youssef gest event ***/
 
-
+    ui->table_event->setModel(e.afficherEvent());
     ui->lineEdit_IDevent->setValidator(new QIntValidator(0,9999999,this));
     ui->lineEdit_NbEmployesevent->setValidator(new QIntValidator(0,999,this));
 
@@ -131,11 +131,20 @@ ui->tab_animaux->setModel(A.afficherAnim());
 
     /******************  narimen gest produit ************************/
 
-/*
 
 
-   // QPixmap pix("C:/Users/toshiba/Desktop/Atelier_Connexion/backgroundpng.jpg");
-    //ui->label_8produit->setPixmap(pix);
+
+    QPixmap pix("C:/Users/asus/Desktop/integration/fond");
+    QPixmap pix1("C:/Users/asus/Desktop/integration/back");
+    ui->labelanimaux->setPixmap(pix);
+    ui->labelphotoemploye->setPixmap(pix);
+    ui->labelphotocage->setPixmap(pix);
+    ui->labelphotoproduit->setPixmap(pix);
+    ui->labelphotoevent->setPixmap(pix);
+    ui->labelvisiteurs->setPixmap(pix);
+
+    ui->labelphotologin->setPixmap(pix1);
+
     QIntValidator *val=new QIntValidator(100000,999999,this);
     ui->le_idproduit->setValidator(val);
       connect(ui->Rechproduit, SIGNAL(textChanged(QString)), this, SLOT(affrech()));
@@ -157,7 +166,7 @@ ui->tab_animaux->setModel(A.afficherAnim());
 
 
     ui->tab_produit->setModel(p.afficherproduit());
-*/
+
 
 }
 MainWindow::~MainWindow()
@@ -415,36 +424,6 @@ void MainWindow::on_comboBox_trier_activated()
 
 }
 
-
-/*void MainWindow::on_pb_trier_clicked()
-{
-
-
-        ui->tab_animaux->setModel(A.trierAnim());
-
-
-        QMessageBox msg;
-       if(A.trierAnim())
-       {
-            ui->tab_animaux->setModel(A.trierAnim());
-           msg.setText("Voilà la liste des animaux avec tri croissant selon l'ID");
-           msg.exec();
-       }
-
-
-       ui->le_nom->clear();
-       ui->le_pays->clear();
-       ui->le_idAnim->clear();
-       ui->le_status->clear();
-       ui->le_typeAnimal->clear();
-       ui->le_regime->clear();
-       ui->le_age->clear();
-
-
-
-}*/
-
-
 /********************************   reset  *****************************/
 void MainWindow::on_pb_reset_clicked()
 {
@@ -478,9 +457,6 @@ void MainWindow::on_pb_reset_clicked()
 
 void MainWindow::on_pb_pdf_clicked()
 {
-
-
-
     QString strStream;
     strStream = QFileDialog::getSaveFileName((QWidget* )0, "Export PDF", QString(), "*.pdf");
         if (QFileInfo(strStream).suffix().isEmpty()) { strStream.append(".pdf"); }
@@ -780,15 +756,32 @@ void MainWindow::on_le_rechercher_textEdited(const QString &arg1)
             /************************* gestion des employe   omar ******************************/
 
 
+
+
+void MainWindow::on_tab_employee_clicked(const QModelIndex &index)
+{
+    ui->le_idemploye->setText(ui->tab_employee->model()->data(ui->tab_employee->model()->index(index.row(),0)).toString());
+     ui->le_nomemploye->setText(ui->tab_employee->model()->data(ui->tab_employee->model()->index(index.row(),1)).toString());
+     ui->le_prenomemploye->setText(ui->tab_employee->model()->data(ui->tab_employee->model()->index(index.row(),2)).toString());
+     ui->le_telemploye->setText(ui->tab_employee->model()->data(ui->tab_employee->model()->index(index.row(),3)).toString());
+     ui->le_specialiteemploye->setText(ui->tab_employee->model()->data(ui->tab_employee->model()->index(index.row(),4)).toString());
+     ui->le_adressemploye->setText(ui->tab_employee->model()->data(ui->tab_employee->model()->index(index.row(),5)).toString());
+     ui->le_salaireemploye->setText(ui->tab_employee->model()->data(ui->tab_employee->model()->index(index.row(),6)).toString());
+}
+
+
+
+
+
 void MainWindow::on_pb_ajouteremploye_clicked()
 {
+    QString id=ui->le_idemploye->text();
+    QString nomemploy=ui->le_nomemploye->text();
+    QString prenom=ui->le_prenomemploye->text();
     int tel=ui->le_telemploye->text().toInt();
-    float salaire=ui->le_salaireemploye->text().toFloat();
-        QString nomemploy=ui->le_nomemploye->text();
+    QString specialite=ui->le_specialiteemploye->text();
         QString adress=ui->le_adressemploye->text();
-        QString prenom=ui->le_prenomemploye->text();
-        QString specialite=ui->le_specialiteemploye->text();
-        QString id=ui->le_idemploye->text();
+        float salaire=ui->le_salaireemploye->text().toFloat();
 
 
 
@@ -798,7 +791,6 @@ void MainWindow::on_pb_ajouteremploye_clicked()
 
             if(test)
                {
-
 
                 msgBox.setText("Ajout avec succes.");
                 ui->tab_employee->setModel(E.afficherEmploye());
@@ -957,7 +949,7 @@ void MainWindow::on_pb_rechercheremploye_clicked()
 
 }
 
-void MainWindow::on_pb_calcul_clicked()
+void MainWindow::on_pb_calculemploye_clicked()
 {
     QSqlQuery query=E.calculerSalaire();
         query.exec();
@@ -985,6 +977,19 @@ void MainWindow::on_camera_pt_clicked()
 
 
 
+void MainWindow::on_tab_visiteur_clicked(const QModelIndex &index)
+{
+
+    ui->le_adressevisiteur->setText(ui->tab_visiteur->model()->data(ui->tab_visiteur->model()->index(index.row(),0)).toString());
+    ui->le_agevisiteur->setText(ui->tab_visiteur->model()->data(ui->tab_visiteur->model()->index(index.row(),1)).toString());
+
+    ui->le_idvisiteur->setText(ui->tab_visiteur->model()->data(ui->tab_visiteur->model()->index(index.row(),2)).toString());
+     ui->le_nomvisiteur->setText(ui->tab_visiteur->model()->data(ui->tab_visiteur->model()->index(index.row(),3)).toString());
+     ui->le_prenomvisiteur->setText(ui->tab_visiteur->model()->data(ui->tab_visiteur->model()->index(index.row(),4)).toString());
+
+
+
+}
 void MainWindow  ::on_pb_ajoutervisiteur_clicked()
 { ///recuperation des valeurs saisie dans le line edite pour visiteurs
     int id=ui->le_idvisiteur->text().toInt();
@@ -1093,7 +1098,7 @@ void MainWindow::on_pb_loadvisiteur_clicked()
              q->exec();
              model->setQuery(*q);
 
-             ui->comboBox_modifvisiteur->setModel(model);
+             //ui->comboBox_modifvisiteur->setModel(model);
 
 
 
@@ -1285,7 +1290,7 @@ void MainWindow::on_pb_chargementtvisiteur_clicked()
     q->prepare("SELECT idvisiteur from VISITEURS");
     q->exec();
     model->setQuery(*q); ///
-    ui->comboBoxxvisiteur->setModel(model);
+  //  ui->comboBoxxvisiteur->setModel(model);
 
 }
 
@@ -1295,7 +1300,7 @@ void MainWindow::on_le_id_supprimerrvisiteur_clicked()
    visiteur V1;
    ///acoorder a V1 l id saisie au niveau du line edit
 
-   V1.setIdVisiteur(ui->comboBoxxvisiteur->currentText().toInt());
+   V1.setIdVisiteur(ui->le_idvisiteur->text().toInt());
 
    ///appel du methode supprimer
    /// recuperer le resultat dans test
@@ -1335,6 +1340,18 @@ void MainWindow::on_le_id_supprimerrvisiteur_clicked()
             /*************************   cage aziz  ****************************/
 
 
+
+
+void MainWindow::on_tab_cage_clicked(const QModelIndex &index)
+{
+    ui->idcage->setText(ui->tab_cage->model()->data(ui->tab_cage->model()->index(index.row(),0)).toString());
+    ui->typecage->setText(ui->tab_cage->model()->data(ui->tab_cage->model()->index(index.row(),1)).toString());
+    ui->datecage->setText(ui->tab_cage->model()->data(ui->tab_cage->model()->index(index.row(),2)).toString());
+     ui->statuscage->setText(ui->tab_cage->model()->data(ui->tab_cage->model()->index(index.row(),3)).toString());
+      ui->taillecage->setText(ui->tab_cage->model()->data(ui->tab_cage->model()->index(index.row(),4)).toString());
+
+
+}
 
 
 
@@ -1377,7 +1394,7 @@ void MainWindow::on_pb_supprimercage_clicked()
        cage C1;
        ///acoorder a V1 l id saisie au niveau du line edit
 
-       C1.setidcage(ui->comboBoxcage->currentText().toInt());
+       C1.setidcage(ui->idcage->text().toInt());
 
        ///appel du methode supprimer
        /// recuperer le resultat dans test
@@ -1599,7 +1616,7 @@ void MainWindow::on_pushButton_3cage_clicked()
                     q->prepare("SELECT identifiant from cages");
                     q->exec();
                     model->setQuery(*q); ///
-                    ui->comboBoxcage->setModel(model);
+                   // ui->comboBoxcage->setModel(model);
 }
 
 void MainWindow::on_comboBox_2cage_activated(const QString &arg1) //combobox modify
@@ -1633,7 +1650,7 @@ void MainWindow::on_pushButton_4cage_clicked() //combobox sup
                     q->prepare("SELECT identifiant from cages");
                     q->exec();
                     model->setQuery(*q); ///
-                    ui->comboBox_2cage->setModel(model);
+                   // ui->comboBox_2cage->setModel(model);
 }
 
 void MainWindow::on_pushButton_5cage_clicked()  //clear
@@ -2261,3 +2278,6 @@ void MainWindow::on_pushButton_6produit_clicked()
         }
     }
 }
+
+
+
