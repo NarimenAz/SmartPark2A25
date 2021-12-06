@@ -13,8 +13,27 @@ produit::produit(int ref,QString nom,QString categorie,float prix,int quantite)
     this->prix=prix;
     this->quantite=quantite;
 }
+bool produit::rechercher(int ref)
+{
+    QString refer=QString::number(ref);
+    QSqlQuery q("select * from produit where ref="+refer);
+    while(q.next())
+    {
+        return true;
+    }
+    return false;
+}
 
 
+void produit::stat(QPieSeries *series)
+{
+    series->clear();
+    QSqlQuery q("select categorie,count(*) from produit group by categorie");
+
+
+     while(q.next())
+     {series->append(q.value(0).toString()+": "+q.value(1).toString(),q.value(1).toInt());}
+}
 bool produit::ajouter()
 {
     QString pr=QString::number(prix);
@@ -30,10 +49,12 @@ bool produit::ajouter()
 
 bool produit::supprimer(int ref)
 {
+    bool test=rechercher(ref);
     QSqlQuery query;
     query.prepare("delete from produit where ref=:ref");
     query.bindValue(":ref",ref);
-    return query.exec();
+    query.exec();
+    return test;
 }
 
 bool produit::modifier(int ref)
@@ -46,7 +67,8 @@ bool produit::modifier(int ref)
     query.bindValue(":categorie",categorie);
     query.bindValue(":prix",pr);
     query.bindValue(":quantite",quantite);
-    return query.exec();
+    query.exec();
+    return rechercher(ref);
 }
 QSqlQueryModel* produit::afficher()
 {

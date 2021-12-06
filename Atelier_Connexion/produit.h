@@ -4,6 +4,9 @@
 #include <QSqlQueryModel>
 #include <QSqlQuery>
 #include <QVariant>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
 class produit
 {
 public:
@@ -12,9 +15,11 @@ public:
     bool ajouter();
     bool modifier(int);
     bool supprimer(int);
+    bool rechercher(int);
     QSqlQueryModel* afficher();
     QSqlQueryModel* rechercher(QString,QString);
     QSqlQueryModel* trier(QString);
+    void stat(QPieSeries *series);
 
 private:
     int ref;

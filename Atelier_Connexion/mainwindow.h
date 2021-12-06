@@ -2,6 +2,10 @@
 #define MAINWINDOW_H
 #include "produit.h"
 #include <QMainWindow>
+#include <QtCharts>
+#include <QChartView>
+#include <QPieSeries>
+#include "arduino.h"
 
 namespace Ui {
 class MainWindow;
@@ -28,9 +32,20 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void affrech();
+    void update_label();
 private:
     Ui::MainWindow *ui;
     produit p;
+    QPieSeries *series = new QPieSeries();
+    arduino a;
+    QByteArray data;
 };
 
 #endif // MAINWINDOW_H
