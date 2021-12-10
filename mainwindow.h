@@ -40,7 +40,7 @@ void on_pb_stat_clicked();
 
 void on_comboBox_trier_activated();
 
-void on_comboBox_trier_activated(const QString &arg1);
+
 
 void on_pb_code_clicked();
 
@@ -138,8 +138,6 @@ void on_pushButton_7cage_clicked();
 
 void on_lineEditcage_textEdited(const QString &arg1);
 
-void on_lineEditcage_cursorPositionChanged(int arg1, int arg2);
-
 void on_pushButton_8cage_clicked();
 
 
@@ -172,9 +170,9 @@ bool searchevent(int);
 
 void on_lineEditevent_textEdited(const QString &arg1);
 
-void on_pushButton_8event_clicked();
+//void on_pushButton_8event_clicked();
 
-void on_calendarWidget_clicked(const QDate &date);
+
 
 
 /********************  gest produit narimen  *******************/

@@ -134,7 +134,7 @@ ui->tab_animaux->setModel(A.afficherAnim());
 
 
 
-    QPixmap pix("C:/Users/asus/Desktop/integration/fond");
+    QPixmap pix("C:/Users/asus/Desktop/integration/layka");
     QPixmap pix1("C:/Users/asus/Desktop/integration/back");
     ui->labelanimaux->setPixmap(pix);
     ui->labelphotoemploye->setPixmap(pix);
