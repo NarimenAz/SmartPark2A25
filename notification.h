@@ -13,6 +13,9 @@ public:
     void notification_supprimeranimau();
 
     void notification_modifieranimau();
+    void notification_carte();
+    void notification_ouverture();
+    void notification_fermeture();
 
 
 

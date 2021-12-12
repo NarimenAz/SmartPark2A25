@@ -29,6 +29,7 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     Widget.cpp \
     animaux.cpp \
+    arduino.cpp \
     cage.cpp \
     connection.cpp \
     employee.cpp \
@@ -44,6 +45,7 @@ SOURCES += \
 
 HEADERS += \
     animaux.h \
+    arduino.h \
     cage.h \
     connection.h \
     employee.h \

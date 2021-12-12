@@ -9,6 +9,7 @@
 #include "cage.h"
 #include "evenement.h"
 #include "produit.h"
+#include "arduino.h"
 
 #include  "Widget.h"
 QT_BEGIN_NAMESPACE
@@ -206,6 +207,24 @@ void on_tab_visiteur_clicked(const QModelIndex &index);
 
 void on_tab_cage_clicked(const QModelIndex &index);
 
+
+
+
+
+/************* ARDUINO *****/
+
+
+void update_label();   // slot permettant la mise à jour du label état de la lampe 1,
+// ce slot est lancé à chaque réception d'un message de Arduino
+
+void on_pushButtonarduino_clicked();   // bouton ON
+
+void on_pushButton_2arduino_clicked(); // bouton OFF
+
+
+
+
+
 private:
     Ui::MainWindow *ui;
 
@@ -219,5 +238,12 @@ private:
    evenement e ;
    produit p;
    QPieSeries *series = new QPieSeries();
+
+
+   QByteArray data; // variable contenant les données reçues
+   QByteArray data1;
+
+   Arduino A1; // objet temporaire
+   int *i;
 };
 #endif // MAINWINDOW_H

@@ -15,7 +15,7 @@ void Notification::notification_ajoutanimau()
 
     QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
-    //notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/pdf/logo_projet"));
+    notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/integration/layka"));
     notifyIcon->show();
     notifyIcon->showMessage("Gestion des Animaux ","nouveau animal est ajouté ",QSystemTrayIcon::Information,15000);
 }
@@ -25,8 +25,8 @@ void Notification::notification_ajoutanimau()
 void Notification::notification_supprimeranimau(){
     QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
-   // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
-    notifyIcon->show();
+notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/integration/layka"));
+notifyIcon->show();
     notifyIcon->showMessage("Gestion des Animaux ","Un animal est supprimé",QSystemTrayIcon::Information,15000);
 }
 
@@ -37,8 +37,9 @@ void Notification::notification_supprimeranimau(){
 void Notification::notification_modifieranimau(){
     QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
-   // notifyIcon->setIcon(QIcon(":/new/prefix1/MyResources/computer-icons-avatar-user-login-avatar.jpg"));
-    notifyIcon->show();
+notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/integration/layka"));
+
+notifyIcon->show();
     notifyIcon->showMessage("Gestion des Animaux ","nouveau animal est modifié",QSystemTrayIcon::Information,15000);
 
 }
@@ -46,7 +47,32 @@ void Notification::notification_modifieranimau(){
 
 
 
+void Notification::notification_carte()
+{QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
 
+    notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/integration/layka"));
+     notifyIcon->show();
+     notifyIcon->showMessage("zoolanders ","carte acceptée",QSystemTrayIcon::Information,15000);
+
+}
+void Notification::notification_ouverture()
+{
+    QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
+
+    notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/integration/layka"));
+    notifyIcon->show();
+    notifyIcon->showMessage("zoolanders ","la porte est ouverte",QSystemTrayIcon::Information,15000);
+
+}
+void Notification::notification_fermeture()
+{
+    QSystemTrayIcon *notifyIcon = new QSystemTrayIcon;
+
+    notifyIcon->setIcon(QIcon("C:/Users/asus/Desktop/integration/layka"));
+    notifyIcon->show();
+    notifyIcon->showMessage("zoolanders ","la porte est fermée",QSystemTrayIcon::Information,15000);
+
+}
 
 
 

@@ -81,6 +81,27 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+
+
+    /*************** ARDUINO    ************/
+
+
+    int ret=A1.connect_arduino(); // lancer la connexion à arduino
+    switch(ret){
+    case(0):qDebug()<< "arduino is available and connected to : "<< A1.getarduino_port_name();
+        break;
+    case(1):qDebug() << "arduino is available but not connected to :" <<A1.getarduino_port_name();
+       break;
+    case(-1):qDebug() << "arduino is not available";
+    }
+     QObject::connect(A1.getserial(),SIGNAL(readyRead()),this,SLOT(update_label())); // permet de lancer
+     //le slot update_label suite à la reception du signal readyRead (reception des données).
+
+
+
+
+
+
     ui->setupUi(this);
 ui->tab_animaux->setModel(A.afficherAnim());
         ui->le_idAnim->setValidator( new QIntValidator(0, 99999999, this));
@@ -142,6 +163,7 @@ ui->tab_animaux->setModel(A.afficherAnim());
     ui->labelphotoproduit->setPixmap(pix);
     ui->labelphotoevent->setPixmap(pix);
     ui->labelvisiteurs->setPixmap(pix);
+    ui->label_8photo->setPixmap(pix);
 
     ui->labelphotologin->setPixmap(pix1);
 
@@ -889,6 +911,7 @@ void MainWindow::on_pb_modifieremploye_clicked()
 
 void MainWindow::on_login_1_clicked()
 {
+
 
 
     QString username = ui->username_1->text();
@@ -2278,6 +2301,67 @@ void MainWindow::on_pushButton_6produit_clicked()
         }
     }
 }
+
+
+
+
+
+/*************************** ARDUINOOO   **********************/
+
+
+void MainWindow::update_label()
+{
+    Notification N;
+    data=A1.read_from_arduino();
+
+    if(data=="1")
+{
+        N.notification_ouverture();
+        ui->label_3arduino->setText("OUVERT"); // si les données reçues de arduino via la liaison série sont égales à 1
+     ui->label_mouvementarduino->setText("pas de mouvement");
+     }
+    // alors afficher oouvert
+
+    else if (data=="0")
+
+       {
+        N.notification_fermeture();
+        ui->label_3arduino->setText("FERMER");
+    ui->label_mouvementarduino->setText("pas de mouvement");// si les données reçues de arduino via la liaison série sont égales à 0
+     //alors afficher ON
+
+    }
+
+
+    if(data=="2")
+{
+        N.notification_carte();
+        ui->label_3arduino->setText("OUVERT"); // si les données reçues de arduino via la liaison série sont égales à 1
+     ui->label_mouvementarduino->setText("pas de mouvement");
+     QMessageBox::information(this, tr("Card is valid!"), "ACCESS GIVEN , welcome");}
+    if(data=="3")
+{
+        ui->label_3arduino->setText("OUVERT"); // si les données reçues de arduino via la liaison série sont égales à 1
+     ui->label_mouvementarduino->setText("mouvement detecté");
+    }
+
+}
+
+void MainWindow::on_pushButtonarduino_clicked()   // implémentation du slot bouton on
+{
+
+
+
+     A1.write_to_arduino("1"); //envoyer 1 à arduino
+
+}
+
+void MainWindow::on_pushButton_2arduino_clicked()  // implémentation du slot bouton off
+{
+     {A1.write_to_arduino("0");} //envoyer 0 à arduino
+}
+
+
 
 
 
